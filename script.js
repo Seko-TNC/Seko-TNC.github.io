@@ -4,116 +4,197 @@ const translations = {
       title: "RafTek | Electronic Shelf Label Solutions & IoT Consultancy",
       description: "RafTek provides Electronic Shelf Label solutions, IoT consultancy and systems integration for retailers and technology partners across the UK, EU and Turkey."
     },
-    nav: {solutions:"ESL Solutions", benefits:"Benefits", projects:"Use Cases", consultancy:"IoT Consultancy", contact:"Contact"},
+    nav: {
+      solutions: "ESL Solutions",
+      benefits: "Why ESL",
+      capabilities: "Capabilities",
+      consultancy: "IoT Consultancy",
+      contact: "Contact"
+    },
     hero: {
-      eyebrow:"Electronic Shelf Label Solutions & IoT",
-      title:"Electronic Shelf Label solutions for modern retail.",
-      body:"RafTek helps retailers assess, integrate and deploy scalable ESL systems — from hardware and connectivity to software integration and rollout.",
-      ctaPrimary:"Explore ESL Solutions",
-      ctaSecondary:"Discuss a Project",
-      region:"UK · European Union · Turkey",
-      capability:"Hardware · Software · Cloud · Integration"
+      eyebrow: "Electronic Shelf Label Solutions & IoT",
+      title: "Smarter shelf-edge technology for modern retail.",
+      body: "RafTek provides electronic shelf label solutions, systems integration and IoT expertise that help retailers modernise pricing and connected store operations.",
+      ctaPrimary: "Explore ESL Solutions",
+      ctaSecondary: "Talk to RafTek"
     },
-    architecture:{
-      kicker:"Connected retail architecture",
-      sourceTitle:"POS / ERP / Product Data", sourceBody:"Prices, products and promotions",
-      platformTitle:"RafTek Management & Integration", platformBody:"Workflows, monitoring and API integration",
-      gatewayTitle:"ESL Gateway / Access Point", gatewayBody:"Store connectivity",
-      labelsTitle:"Electronic Shelf Labels", labelsBody:"Digital shelf-edge information"
+    proof: {
+      eslTitle: "Electronic Shelf Labels",
+      eslBody: "Hardware, connectivity and management",
+      integrationTitle: "Systems Integration",
+      integrationBody: "POS, ERP, API and middleware connectivity",
+      iotTitle: "IoT Consultancy",
+      iotBody: "Connected infrastructure and cloud architecture",
+      regionsTitle: "International Coverage",
+      regionsBody: "UK, European Union and Turkey"
     },
-    about:{
-      eyebrow:"About RafTek",
-      title:"Practical technology, designed around real retail operations.",
-      p1:"RafTek is an Electronic Shelf Label solutions company and IoT consultancy supporting retailers and technology partners across the UK, European Union and Turkey.",
-      p2:"We combine hardware evaluation, connectivity, cloud architecture, software integration and deployment planning to help businesses move from manual shelf-edge processes to connected digital infrastructure."
+    about: {
+      eyebrow: "About RafTek",
+      title: "Retail technology without unnecessary complexity.",
+      p1: "RafTek is an Electronic Shelf Label solutions company and IoT consultancy supporting retailers and technology partners across the UK, European Union and Turkey.",
+      p2: "We bring together electronic shelf labels, store connectivity, cloud architecture and business-system integration to create practical solutions that can scale across retail environments."
     },
-    solutions:{
-      eyebrow:"ESL Solutions", title:"From shelf label to management platform.",
-      body:"RafTek brings together the components required for an end-to-end ESL deployment, with a phased deployment approach designed to reduce implementation risk and support scalable rollout.",
-      labelsTitle:"Electronic Shelf Labels",
-      labelsBody:"E-paper shelf displays for product, price and promotional information, with multiple size and colour options depending on deployment requirements.",
-      apTitle:"Access Points & Gateways",
-      apBody:"Store connectivity between central management systems and deployed labels, supporting remote update workflows with compatible hardware.",
-      platformTitle:"Management & Integration",
-      platformBody:"Product and price workflows, label assignment, monitoring and API-based integration designed to connect ESL infrastructure with business systems.",
-      deployTitle:"Deployment & Support",
-      deployBody:"Requirements assessment, solution design, technical setup, rollout planning and ongoing operational support for growing ESL estates."
+    solutions: {
+      eyebrow: "ESL Solutions",
+      title: "A complete electronic shelf label proposition.",
+      body: "From the label at the shelf edge to the systems that control it, RafTek provides the technical building blocks needed for reliable ESL deployment.",
+      labelsTitle: "Electronic Shelf Labels",
+      labelsBody: "E-paper displays for product, price and promotional information, available in configurations suited to different retail environments.",
+      connectTitle: "Store Connectivity",
+      connectBody: "Access points and gateway architecture that connect centrally managed data with labels deployed across the store.",
+      manageTitle: "Management & Integration",
+      manageBody: "Product, pricing and label-management workflows connected to POS, ERP, API, middleware or file-based business processes.",
+      deployTitle: "Deployment & Support",
+      deployBody: "Requirements assessment, technical configuration, rollout planning and ongoing operational support for single-site and multi-site estates."
     },
-    benefits:{
-      eyebrow:"Business Case", title:"Why retailers move from paper to electronic shelf labels.",
-      speedTitle:"Faster price changes", speedBody:"Update shelf-edge pricing centrally instead of printing and replacing paper labels manually.",
-      accuracyTitle:"Improved pricing accuracy", accuracyBody:"Reduce the risk of shelf prices becoming out of sync with centrally managed product data.",
-      labourTitle:"Lower manual workload", labourBody:"Reduce repetitive printing, sorting, distributing and replacing of paper shelf labels.",
-      dynamicTitle:"More flexible promotions", dynamicBody:"Support more frequent price and promotion changes without creating the same shelf-edge workload.",
-      centralTitle:"Centralised management", centralBody:"Create a consistent update process across departments, stores or locations.",
-      scaleTitle:"Phased rollout", scaleBody:"Confirm connectivity, workflows and operating requirements through a phased deployment model before wider rollout.",
-      ctaTitle:"Not sure whether ESL is commercially suitable for your stores?",
-      ctaBody:"We can help assess your label volumes, infrastructure, integration requirements and deployment scope.",
-      ctaButton:"Request an ESL Assessment"
+    benefits: {
+      eyebrow: "Why ESL",
+      title: "Turn shelf-edge pricing into a connected digital process.",
+      speedTitle: "Faster price changes",
+      speedBody: "Update shelf pricing centrally instead of printing and replacing paper labels manually.",
+      accuracyTitle: "Improved pricing accuracy",
+      accuracyBody: "Reduce the risk of shelf prices becoming out of sync with centrally managed product data.",
+      workTitle: "Lower manual workload",
+      workBody: "Reduce repetitive printing, sorting, distributing and replacing of paper shelf labels.",
+      promoTitle: "More flexible promotions",
+      promoBody: "Support more frequent pricing and promotional changes without creating the same shelf-edge workload.",
+      centralTitle: "Centralised management",
+      centralBody: "Create a consistent update process across departments, stores and locations.",
+      scaleTitle: "Scalable deployment",
+      scaleBody: "Use a structured rollout model that can expand with store requirements and business priorities."
     },
-    projects:{
-      eyebrow:"Solutions in Practice", title:"Practical ESL and IoT solutions for retail environments.",
-      body:"RafTek solutions are designed around common retail requirements: centralised pricing, remote label management, multi-site deployment and integration with existing business systems.",
-      retailStatus:"Retail ESL", retailContext:"Store deployment", retailTitle:"Retail ESL deployment",
-      retailBody:"A complete shelf-edge digitisation model combining electronic labels, store connectivity, remote updates and centralised management for scalable retail operations.",
-      retail1:"Flexible deployments from hundreds to thousands of ESLs", retail2:"Cloud-managed architecture", retail3:"Remote price and product-information updates", retail4:"Multi-site rollout and central management",
-      integrationStatus:"Systems Integration", integrationType:"Connected retail", integrationTitle:"ESL management & systems integration",
-      integrationBody:"Integration services connecting product and pricing data with ESL management systems, middleware, access points and remote label-update workflows.",
-      integration1:"API, middleware and file-based integration", integration2:"Remote label-update architecture", integration3:"Product, pricing and label-management workflows", integration4:"Supplier-flexible integration approach"
+    capabilities: {
+      eyebrow: "Retail ESL Capability",
+      title: "Built around the way retailers actually operate.",
+      body: "RafTek combines shelf-edge hardware, remote management and integration expertise into a practical operating model for connected retail.",
+      storeLabel: "STORE OPERATIONS",
+      storeTitle: "Digital shelf-edge management",
+      storeBody: "Centralise price and product-information updates across electronic shelf labels while maintaining a clear operational process for store teams.",
+      store1: "Remote price updates",
+      store2: "Product information management",
+      store3: "Single-site and multi-site operation",
+      store4: "Cloud-managed connectivity",
+      systemLabel: "SYSTEMS INTEGRATION",
+      systemTitle: "Connected to existing business systems",
+      systemBody: "Connect product and pricing data with ESL management systems using the integration method that best fits the surrounding technology environment.",
+      system1: "API integration",
+      system2: "Middleware connectivity",
+      system3: "File-based workflows",
+      system4: "Supplier-flexible architecture",
+      note: "Need to understand the right label volumes, connectivity model or integration route for your stores?",
+      cta: "Discuss your requirements →"
     },
-    process:{
-      eyebrow:"How We Work", title:"A structured route from requirement to deployment.",
-      assessTitle:"Assess", assessBody:"Understand stores, label volumes, systems, connectivity and operational requirements.",
-      designTitle:"Design", designBody:"Define hardware, network, cloud and integration architecture appropriate to the use case.",
-      retailTitle:"Validate", retailBody:"Confirm connectivity, workflows and operating requirements through a controlled initial deployment.",
-      deployTitle:"Deploy", deployBody:"Plan implementation, configuration and expansion across stores or departments.",
-      supportTitle:"Support", supportBody:"Provide ongoing technical and operational support as the deployment matures."
+    process: {
+      eyebrow: "How We Work",
+      title: "A clear route from requirements to rollout.",
+      assessTitle: "Assess",
+      assessBody: "Understand stores, label volumes, existing systems, connectivity and operational requirements.",
+      designTitle: "Design",
+      designBody: "Define hardware, network, cloud and integration architecture suited to the operating environment.",
+      validateTitle: "Validate",
+      validateBody: "Confirm connectivity, workflows and operating requirements through a controlled initial deployment.",
+      deployTitle: "Deploy",
+      deployBody: "Configure, implement and expand the solution across stores or departments.",
+      supportTitle: "Support",
+      supportBody: "Provide technical and operational support for the deployed environment."
     },
-    consultancy:{
-      eyebrow:"IoT Consultancy", title:"Beyond ESL: connected systems that work together.",
-      body:"RafTek also supports IoT and systems-integration projects where devices, gateways, cloud services and business applications need to operate as one solution.",
-      item1Title:"Connectivity & gateways", item1Body:"Network and device connectivity design.",
-      item2Title:"API & SDK integration", item2Body:"Connecting devices and vendor platforms to business systems.",
-      item3Title:"Cloud architecture", item3Body:"Cost-conscious hosting and remote-management designs.",
-      item4Title:"Technical supplier evaluation", item4Body:"Comparing hardware, integration models and operational trade-offs."
+    consultancy: {
+      eyebrow: "IoT Consultancy",
+      title: "Connected infrastructure beyond the shelf edge.",
+      body: "RafTek supports IoT and systems-integration requirements where devices, gateways, cloud services and business applications need to operate as one coherent solution.",
+      cta: "Discuss an IoT requirement",
+      item1Title: "Connectivity & gateways",
+      item1Body: "Network and device connectivity design.",
+      item2Title: "API & SDK integration",
+      item2Body: "Connecting devices and vendor platforms to business systems.",
+      item3Title: "Cloud architecture",
+      item3Body: "Cost-conscious hosting and remote-management architecture.",
+      item4Title: "Technical supplier evaluation",
+      item4Body: "Comparing hardware, integration models and operational trade-offs."
     },
-    opportunities:{
-      eyebrow:"Partnerships & Opportunities", title:"Open to commercial and technology partnerships.",
-      body:"We are interested in discussions with retailers, POS and ERP providers, systems integrators, hardware manufacturers and other technology partners where ESL or IoT capability can add value.",
-      retail:"Retailers", pos:"POS & ERP providers", integrators:"Systems integrators", hardware:"Hardware manufacturers", iot:"IoT technology partners",
-      cta:"Discuss a partnership →"
+    partners: {
+      eyebrow: "Partnerships",
+      title: "Technology works better when the ecosystem connects.",
+      body: "RafTek works with retailers, POS and ERP providers, systems integrators, hardware manufacturers and technology partners where ESL or IoT capability can add value.",
+      retail: "Retailers",
+      pos: "POS & ERP providers",
+      integrators: "Systems integrators",
+      hardware: "Hardware manufacturers",
+      iot: "IoT technology partners"
     },
-    regions:{
-      eyebrow:"Operating Regions", title:"UK, European Union and Turkey.",
-      ukTitle:"United Kingdom", ukBody:"Retail and technology engagements.",
-      euTitle:"European Union", euBody:"Cross-border consultancy and technology integration.",
-      trTitle:"Turkey", trBody:"ESL solutions, deployment and commercial support."
+    faq: {
+      eyebrow: "FAQ",
+      title: "Common questions.",
+      intro: "A few of the questions businesses typically consider when evaluating ESL.",
+      q1: "Can RafTek integrate ESLs with existing product or pricing systems?",
+      a1: "Yes. Integration options can include APIs, middleware and file-based workflows depending on the existing systems and supplier environment.",
+      q2: "Do we need to replace an entire store at once?",
+      a2: "No. RafTek supports phased deployments so hardware, connectivity and operating processes can be introduced in a controlled way and expanded across the estate.",
+      q3: "Does RafTek only work with one ESL manufacturer?",
+      a3: "No. RafTek uses a supplier-flexible approach and selects hardware and integration options according to project requirements, compatibility and commercial fit.",
+      q4: "Which markets does RafTek support?",
+      a4: "RafTek supports projects and partnerships across the United Kingdom, European Union and Turkey."
     },
-    faq:{
-      eyebrow:"FAQ", title:"Common questions.",
-      q1:"Can RafTek integrate ESLs with existing product or pricing systems?",
-      a1:"Integration depends on the systems involved, but API, middleware and file-based workflows can all be assessed as part of the solution design.",
-      q2:"Do we need to replace an entire store at once?",
-      a2:"No. RafTek supports phased deployments, allowing hardware, connectivity and operating processes to be confirmed before wider expansion.",
-      q3:"Does RafTek only work with one ESL manufacturer?",
-      a3:"No. RafTek uses a supplier-flexible approach and selects hardware and integration options according to project requirements, compatibility and commercial fit.",
-      q4:"Which markets do you support?",
-      a4:"RafTek currently focuses on projects and partnerships across the UK, European Union and Turkey."
+    contact: {
+      eyebrow: "Contact RafTek",
+      title: "Tell us what you are looking to achieve.",
+      body: "Discuss an ESL deployment, systems-integration requirement, IoT project or commercial partnership.",
+      directLabel: "Prefer email?",
+      regions: "UK · European Union · Turkey"
     },
-    contact:{
-      eyebrow:"Contact RafTek", title:"Planning an ESL, IoT or systems-integration project?",
-      body:"Contact us to discuss an ESL deployment, technical requirement, commercial opportunity or partnership.",
-      label:"Business enquiries", regions:"UK · European Union · Turkey"
+    form: {
+      name: "Name",
+      namePlaceholder: "Your name",
+      company: "Company",
+      companyPlaceholder: "Company name",
+      email: "Work email",
+      emailPlaceholder: "you@company.com",
+      phone: "Phone",
+      phonePlaceholder: "Optional",
+      interest: "What can we help with?",
+      select: "Select an option",
+      optionEsl: "Electronic Shelf Labels",
+      optionIntegration: "Systems Integration",
+      optionIot: "IoT Consultancy",
+      optionPartnership: "Commercial / Technology Partnership",
+      optionOther: "Other",
+      message: "Tell us briefly about your requirements",
+      messagePlaceholder: "Store count, approximate label volume, current systems, project objective or anything else useful.",
+      consent: "I agree that RafTek may use the information submitted here to respond to this enquiry.",
+      submit: "Send enquiry",
+      note: "Your details are used only to respond to your enquiry. See our Privacy Notice."
     },
-    footer:{tagline:"Electronic Shelf Label Solutions & IoT Consultancy", contact:"Contact", links:"Information", privacy:"Privacy", rights:"All rights reserved."},
-    privacy:{
-      eyebrow:"Privacy", title:"Privacy notice", updated:"Last updated: 8 August 2026",
-      intro:"RafTek operates raftek.net. This website is a simple informational site and does not provide user accounts, online purchasing or contact forms.",
-      dataTitle:"Information we receive", dataBody:"If you contact RafTek by email, we receive the information you choose to send to us, including your email address and the contents of your message.",
-      useTitle:"How information is used", useBody:"Information received by email is used to respond to enquiries, discuss potential projects and partnerships, and maintain relevant business correspondence.",
-      cookiesTitle:"Cookies and analytics", cookiesBody:"This version of the website does not intentionally use advertising cookies, tracking cookies or third-party analytics.",
-      contactTitle:"Privacy enquiries", contactBody:"For privacy-related enquiries, contact contact@raftek.net.",
-      back:"← Back to RafTek"
+    footer: {
+      tagline: "Electronic Shelf Label Solutions & IoT Consultancy",
+      contact: "Contact",
+      regionsLabel: "Regions",
+      regions: "UK · European Union · Turkey",
+      info: "Information",
+      privacy: "Privacy Notice",
+      rights: "All rights reserved."
+    },
+    privacy: {
+      eyebrow: "Privacy",
+      title: "Privacy Notice",
+      updated: "Last updated: 8 August 2026",
+      intro: "RafTek operates raftek.net. This website provides information about RafTek services and allows prospective customers and partners to submit enquiries.",
+      dataTitle: "Information we receive",
+      dataBody: "If you contact RafTek by email or use the website enquiry form, we receive the information you choose to provide, such as your name, company, email address, telephone number and message.",
+      useTitle: "How information is used",
+      useBody: "Information is used to respond to enquiries, discuss potential projects and partnerships, and maintain relevant business correspondence.",
+      formTitle: "Website enquiry form",
+      formBody: "The website enquiry form uses FormSubmit as a third-party form-delivery service. Information entered into the form is transmitted through that service so the enquiry can be delivered to RafTek by email.",
+      cookiesTitle: "Cookies and analytics",
+      cookiesBody: "RafTek does not intentionally use advertising cookies or third-party analytics on this version of the website. The form provider may apply security or anti-spam measures when a form is submitted.",
+      contactTitle: "Privacy enquiries",
+      contactBody: "For privacy-related enquiries, contact contact@raftek.net.",
+      back: "← Back to RafTek"
+    },
+    thanks: {
+      eyebrow: "Enquiry received",
+      title: "Thank you for contacting RafTek.",
+      body: "Your enquiry has been submitted. We will review the information you provided and respond using the contact details in your message.",
+      back: "Return to RafTek"
     }
   },
 
@@ -122,116 +203,197 @@ const translations = {
       title: "RafTek | Electronic Shelf Label-oplossingen & IoT-advies",
       description: "RafTek levert Electronic Shelf Label-oplossingen, IoT-advies en systeemintegratie voor retailers en technologiepartners in het VK, de EU en Turkije."
     },
-    nav: {solutions:"ESL-oplossingen", benefits:"Voordelen", projects:"Toepassingen", consultancy:"IoT-advies", contact:"Contact"},
+    nav: {
+      solutions: "ESL-oplossingen",
+      benefits: "Waarom ESL",
+      capabilities: "Mogelijkheden",
+      consultancy: "IoT-advies",
+      contact: "Contact"
+    },
     hero: {
-      eyebrow:"Electronic Shelf Labels & IoT",
-      title:"Electronic Shelf Label-oplossingen voor moderne retail.",
-      body:"RafTek helpt retailers schaalbare ESL-systemen te beoordelen, integreren en implementeren — van hardware en connectiviteit tot software-integratie en uitrol.",
-      ctaPrimary:"Bekijk ESL-oplossingen",
-      ctaSecondary:"Bespreek een project",
-      region:"VK · Europese Unie · Turkije",
-      capability:"Hardware · Software · Cloud · Integratie"
+      eyebrow: "Electronic Shelf Labels & IoT",
+      title: "Slimmere schaptechnologie voor moderne retail.",
+      body: "RafTek levert Electronic Shelf Label-oplossingen, systeemintegratie en IoT-expertise waarmee retailers prijsbeheer en verbonden winkelprocessen moderniseren.",
+      ctaPrimary: "Bekijk ESL-oplossingen",
+      ctaSecondary: "Praat met RafTek"
     },
-    architecture:{
-      kicker:"Verbonden retailarchitectuur",
-      sourceTitle:"POS / ERP / Productdata", sourceBody:"Prijzen, producten en promoties",
-      platformTitle:"RafTek-beheer & integratie", platformBody:"Workflows, monitoring en API-integratie",
-      gatewayTitle:"ESL-gateway / access point", gatewayBody:"Connectiviteit in de winkel",
-      labelsTitle:"Electronic Shelf Labels", labelsBody:"Digitale informatie aan het schap"
+    proof: {
+      eslTitle: "Electronic Shelf Labels",
+      eslBody: "Hardware, connectiviteit en beheer",
+      integrationTitle: "Systeemintegratie",
+      integrationBody: "POS-, ERP-, API- en middlewarekoppelingen",
+      iotTitle: "IoT-advies",
+      iotBody: "Verbonden infrastructuur en cloudarchitectuur",
+      regionsTitle: "Internationale dekking",
+      regionsBody: "VK, Europese Unie en Turkije"
     },
-    about:{
-      eyebrow:"Over RafTek",
-      title:"Praktische technologie, ontworpen rond echte retailprocessen.",
-      p1:"RafTek is een aanbieder van Electronic Shelf Label-oplossingen en een IoT-adviesbureau voor retailers en technologiepartners in het Verenigd Koninkrijk, de Europese Unie en Turkije.",
-      p2:"Wij combineren hardware-evaluatie, connectiviteit, cloudarchitectuur, software-integratie en implementatieplanning om bedrijven te helpen overstappen van handmatige schapprocessen naar verbonden digitale infrastructuur."
+    about: {
+      eyebrow: "Over RafTek",
+      title: "Retailtechnologie zonder onnodige complexiteit.",
+      p1: "RafTek is een aanbieder van Electronic Shelf Label-oplossingen en IoT-advies voor retailers en technologiepartners in het Verenigd Koninkrijk, de Europese Unie en Turkije.",
+      p2: "Wij combineren elektronische schaplabels, winkelconnectiviteit, cloudarchitectuur en integratie met bedrijfssystemen tot praktische oplossingen die schaalbaar zijn in retailomgevingen."
     },
-    solutions:{
-      eyebrow:"ESL-oplossingen", title:"Van schaplabel tot beheerplatform.",
-      body:"RafTek brengt de componenten samen die nodig zijn voor een end-to-end ESL-implementatie, met een gefaseerde implementatieaanpak die risico verlaagt en schaalbare uitrol ondersteunt.",
-      labelsTitle:"Electronic Shelf Labels",
-      labelsBody:"E-paper schapdisplays voor product-, prijs- en promotie-informatie, met meerdere formaten en kleuropties afhankelijk van de implementatie.",
-      apTitle:"Access points & gateways",
-      apBody:"Connectiviteit tussen centrale beheersystemen en geplaatste labels, met ondersteuning voor workflows voor updates op afstand bij compatibele hardware.",
-      platformTitle:"Beheer & integratie",
-      platformBody:"Product- en prijsworkflows, labeltoewijzing, monitoring en API-integratie om ESL-infrastructuur met bedrijfssystemen te verbinden.",
-      deployTitle:"Implementatie & ondersteuning",
-      deployBody:"Inventarisatie van eisen, oplossingsontwerp, technische configuratie, uitrolplanning en operationele ondersteuning voor groeiende ESL-omgevingen."
+    solutions: {
+      eyebrow: "ESL-oplossingen",
+      title: "Een complete Electronic Shelf Label-oplossing.",
+      body: "Van het label aan het schap tot de systemen die het aansturen: RafTek levert de technische bouwstenen voor betrouwbare ESL-implementatie.",
+      labelsTitle: "Electronic Shelf Labels",
+      labelsBody: "E-paper displays voor product-, prijs- en promotie-informatie, beschikbaar in configuraties voor verschillende retailomgevingen.",
+      connectTitle: "Winkelconnectiviteit",
+      connectBody: "Access points en gateway-architectuur die centraal beheerde data verbinden met labels in de winkel.",
+      manageTitle: "Beheer & integratie",
+      manageBody: "Product-, prijs- en labelbeheerworkflows gekoppeld aan POS, ERP, API, middleware of bestandsgebaseerde processen.",
+      deployTitle: "Implementatie & ondersteuning",
+      deployBody: "Inventarisatie, technische configuratie, uitrolplanning en operationele ondersteuning voor één of meerdere locaties."
     },
-    benefits:{
-      eyebrow:"Businesscase", title:"Waarom retailers overstappen van papier naar elektronische schaplabels.",
-      speedTitle:"Snellere prijswijzigingen", speedBody:"Werk schapprijzen centraal bij in plaats van papieren labels handmatig te printen en vervangen.",
-      accuracyTitle:"Betere prijsnauwkeurigheid", accuracyBody:"Verklein het risico dat schapprijzen afwijken van centraal beheerde productdata.",
-      labourTitle:"Minder handmatig werk", labourBody:"Verminder repetitief printen, sorteren, verspreiden en vervangen van papieren schaplabels.",
-      dynamicTitle:"Flexibelere promoties", dynamicBody:"Maak frequentere prijs- en promotiewijzigingen mogelijk zonder dezelfde werklast aan het schap.",
-      centralTitle:"Centraal beheer", centralBody:"Creëer een consistente updateprocedure voor afdelingen, winkels of locaties.",
-      scaleTitle:"Gefaseerde uitrol", scaleBody:"Bevestig connectiviteit, workflows en operationele eisen via een gefaseerd implementatiemodel vóór bredere uitrol.",
-      ctaTitle:"Niet zeker of ESL commercieel geschikt is voor uw winkels?",
-      ctaBody:"Wij kunnen labelvolumes, infrastructuur, integratie-eisen en de implementatiescope helpen beoordelen.",
-      ctaButton:"Vraag een ESL-assessment aan"
+    benefits: {
+      eyebrow: "Waarom ESL",
+      title: "Maak schapprijsbeheer tot een verbonden digitaal proces.",
+      speedTitle: "Snellere prijswijzigingen",
+      speedBody: "Werk schapprijzen centraal bij in plaats van papieren labels handmatig te printen en vervangen.",
+      accuracyTitle: "Betere prijsnauwkeurigheid",
+      accuracyBody: "Verklein het risico dat schapprijzen afwijken van centraal beheerde productdata.",
+      workTitle: "Minder handmatig werk",
+      workBody: "Verminder repetitief printen, sorteren, verspreiden en vervangen van papieren schaplabels.",
+      promoTitle: "Flexibelere promoties",
+      promoBody: "Ondersteun frequentere prijs- en promotiewijzigingen zonder dezelfde werklast aan het schap.",
+      centralTitle: "Centraal beheer",
+      centralBody: "Creëer een consistente updateprocedure voor afdelingen, winkels en locaties.",
+      scaleTitle: "Schaalbare implementatie",
+      scaleBody: "Gebruik een gestructureerd uitrolmodel dat meegroeit met winkelbehoeften en bedrijfsprioriteiten."
     },
-    projects:{
-      eyebrow:"Oplossingen in de praktijk", title:"Praktische ESL- en IoT-oplossingen voor retailomgevingen.",
-      body:"RafTek-oplossingen zijn ontworpen rond veelvoorkomende retailbehoeften: centraal prijsbeheer, labelbeheer op afstand, uitrol over meerdere locaties en integratie met bestaande bedrijfssystemen.",
-      retailStatus:"Retail ESL", retailContext:"Winkelimplementatie", retailTitle:"Retail ESL-implementatie",
-      retailBody:"Een compleet model voor digitalisering aan het schap, met elektronische labels, winkelconnectiviteit, updates op afstand en centraal beheer voor schaalbare retailoperaties.",
-      retail1:"Flexibele implementaties van honderden tot duizenden ESL's", retail2:"Cloud-beheerde architectuur", retail3:"Prijs- en productinformatie-updates op afstand", retail4:"Uitrol naar meerdere locaties en centraal beheer",
-      integrationStatus:"Systeemintegratie", integrationType:"Connected retail", integrationTitle:"ESL-beheer & systeemintegratie",
-      integrationBody:"Integratiediensten die product- en prijsdata verbinden met ESL-beheersystemen, middleware, access points en workflows voor labelupdates op afstand.",
-      integration1:"API-, middleware- en bestandsgebaseerde integratie", integration2:"Architectuur voor labelupdates op afstand", integration3:"Product-, prijs- en labelbeheerworkflows", integration4:"Leveranciersonafhankelijke integratieaanpak"
+    capabilities: {
+      eyebrow: "Retail ESL-capaciteit",
+      title: "Ontworpen rond de manier waarop retailers echt werken.",
+      body: "RafTek combineert schaptechnologie, beheer op afstand en integratie-expertise tot een praktisch model voor connected retail.",
+      storeLabel: "WINKELPROCESSEN",
+      storeTitle: "Digitaal schapbeheer",
+      storeBody: "Centraliseer prijs- en productinformatie-updates over elektronische schaplabels met een duidelijke operationele werkwijze voor winkelteams.",
+      store1: "Prijsupdates op afstand",
+      store2: "Productinformatiebeheer",
+      store3: "Eén of meerdere locaties",
+      store4: "Cloud-beheerde connectiviteit",
+      systemLabel: "SYSTEEMINTEGRATIE",
+      systemTitle: "Verbonden met bestaande bedrijfssystemen",
+      systemBody: "Koppel product- en prijsdata aan ESL-beheersystemen via de integratiemethode die het beste past bij de bestaande technologieomgeving.",
+      system1: "API-integratie",
+      system2: "Middleware-connectiviteit",
+      system3: "Bestandsgebaseerde workflows",
+      system4: "Leveranciersonafhankelijke architectuur",
+      note: "Wilt u bepalen welke labelvolumes, connectiviteit of integratieroute bij uw winkels past?",
+      cta: "Bespreek uw requirements →"
     },
-    process:{
-      eyebrow:"Onze werkwijze", title:"Een gestructureerde route van behoefte naar implementatie.",
-      assessTitle:"Inventariseren", assessBody:"Begrijp winkels, labelvolumes, systemen, connectiviteit en operationele eisen.",
-      designTitle:"Ontwerpen", designBody:"Definieer hardware-, netwerk-, cloud- en integratiearchitectuur passend bij de use case.",
-      retailTitle:"Valideren", retailBody:"Bevestig connectiviteit, workflows en operationele eisen via een gecontroleerde eerste implementatie.",
-      deployTitle:"Uitrollen", deployBody:"Plan implementatie, configuratie en uitbreiding over winkels of afdelingen.",
-      supportTitle:"Ondersteunen", supportBody:"Bied doorlopende technische en operationele ondersteuning naarmate de implementatie groeit."
+    process: {
+      eyebrow: "Onze werkwijze",
+      title: "Een duidelijke route van requirements naar uitrol.",
+      assessTitle: "Inventariseren",
+      assessBody: "Begrijp winkels, labelvolumes, bestaande systemen, connectiviteit en operationele eisen.",
+      designTitle: "Ontwerpen",
+      designBody: "Definieer hardware-, netwerk-, cloud- en integratiearchitectuur passend bij de operationele omgeving.",
+      validateTitle: "Valideren",
+      validateBody: "Bevestig connectiviteit, workflows en operationele eisen via een gecontroleerde eerste implementatie.",
+      deployTitle: "Uitrollen",
+      deployBody: "Configureer, implementeer en breid de oplossing uit over winkels of afdelingen.",
+      supportTitle: "Ondersteunen",
+      supportBody: "Bied technische en operationele ondersteuning voor de geïmplementeerde omgeving."
     },
-    consultancy:{
-      eyebrow:"IoT-advies", title:"Meer dan ESL: verbonden systemen die samenwerken.",
-      body:"RafTek ondersteunt ook IoT- en systeemintegratieprojecten waarbij apparaten, gateways, clouddiensten en bedrijfsapplicaties als één oplossing moeten functioneren.",
-      item1Title:"Connectiviteit & gateways", item1Body:"Ontwerp van netwerk- en apparaatconnectiviteit.",
-      item2Title:"API- & SDK-integratie", item2Body:"Apparaten en leveranciersplatforms koppelen aan bedrijfssystemen.",
-      item3Title:"Cloudarchitectuur", item3Body:"Kostenbewuste ontwerpen voor hosting en beheer op afstand.",
-      item4Title:"Technische leveranciersbeoordeling", item4Body:"Vergelijking van hardware, integratiemodellen en operationele afwegingen."
+    consultancy: {
+      eyebrow: "IoT-advies",
+      title: "Verbonden infrastructuur buiten het schap.",
+      body: "RafTek ondersteunt IoT- en systeemintegratiebehoeften waarbij apparaten, gateways, clouddiensten en bedrijfsapplicaties als één samenhangende oplossing moeten functioneren.",
+      cta: "Bespreek een IoT-vraagstuk",
+      item1Title: "Connectiviteit & gateways",
+      item1Body: "Ontwerp van netwerk- en apparaatconnectiviteit.",
+      item2Title: "API- & SDK-integratie",
+      item2Body: "Apparaten en leveranciersplatforms koppelen aan bedrijfssystemen.",
+      item3Title: "Cloudarchitectuur",
+      item3Body: "Kostenbewuste hosting- en remote-managementarchitectuur.",
+      item4Title: "Technische leveranciersbeoordeling",
+      item4Body: "Vergelijking van hardware, integratiemodellen en operationele afwegingen."
     },
-    opportunities:{
-      eyebrow:"Partnerschappen & kansen", title:"Open voor commerciële en technologische samenwerkingen.",
-      body:"Wij spreken graag met retailers, POS- en ERP-leveranciers, systeemintegratoren, hardwarefabrikanten en andere technologiepartners waar ESL- of IoT-capaciteit waarde kan toevoegen.",
-      retail:"Retailers", pos:"POS- & ERP-leveranciers", integrators:"Systeemintegratoren", hardware:"Hardwarefabrikanten", iot:"IoT-technologiepartners",
-      cta:"Bespreek een samenwerking →"
+    partners: {
+      eyebrow: "Partnerschappen",
+      title: "Technologie werkt beter wanneer het ecosysteem verbonden is.",
+      body: "RafTek werkt met retailers, POS- en ERP-leveranciers, systeemintegratoren, hardwarefabrikanten en technologiepartners waar ESL- of IoT-capaciteit waarde kan toevoegen.",
+      retail: "Retailers",
+      pos: "POS- & ERP-leveranciers",
+      integrators: "Systeemintegratoren",
+      hardware: "Hardwarefabrikanten",
+      iot: "IoT-technologiepartners"
     },
-    regions:{
-      eyebrow:"Werkgebieden", title:"VK, Europese Unie en Turkije.",
-      ukTitle:"Verenigd Koninkrijk", ukBody:"Retail- en technologieprojecten.",
-      euTitle:"Europese Unie", euBody:"Grensoverschrijdend advies en technologie-integratie.",
-      trTitle:"Turkije", trBody:"ESL-oplossingen, implementatie en commerciële ondersteuning."
+    faq: {
+      eyebrow: "FAQ",
+      title: "Veelgestelde vragen.",
+      intro: "Enkele vragen die bedrijven doorgaans stellen bij het beoordelen van ESL.",
+      q1: "Kan RafTek ESL's integreren met bestaande product- of prijssystemen?",
+      a1: "Ja. Integratie kan via API's, middleware of bestandsgebaseerde workflows, afhankelijk van de bestaande systemen en leveranciersomgeving.",
+      q2: "Moeten we meteen een hele winkel vervangen?",
+      a2: "Nee. RafTek ondersteunt gefaseerde implementaties, zodat hardware, connectiviteit en operationele processen gecontroleerd kunnen worden ingevoerd en daarna uitgebreid.",
+      q3: "Werkt RafTek slechts met één ESL-fabrikant?",
+      a3: "Nee. RafTek hanteert een leveranciersonafhankelijke aanpak en selecteert hardware- en integratieopties op basis van projecteisen, compatibiliteit en commerciële geschiktheid.",
+      q4: "Welke markten ondersteunt RafTek?",
+      a4: "RafTek ondersteunt projecten en partnerschappen in het Verenigd Koninkrijk, de Europese Unie en Turkije."
     },
-    faq:{
-      eyebrow:"FAQ", title:"Veelgestelde vragen.",
-      q1:"Kan RafTek ESL's integreren met bestaande product- of prijssystemen?",
-      a1:"Integratie hangt af van de betrokken systemen, maar API-, middleware- en bestandsgebaseerde workflows kunnen allemaal worden beoordeeld als onderdeel van het oplossingsontwerp.",
-      q2:"Moeten we meteen een hele winkel vervangen?",
-      a2:"Nee. RafTek ondersteunt gefaseerde implementaties, zodat hardware, connectiviteit en operationele processen kunnen worden bevestigd vóór verdere uitbreiding.",
-      q3:"Werkt RafTek maar met één ESL-fabrikant?",
-      a3:"Nee. RafTek hanteert een leveranciersonafhankelijke aanpak en selecteert hardware- en integratieopties op basis van projecteisen, compatibiliteit en commerciële geschiktheid.",
-      q4:"Welke markten ondersteunen jullie?",
-      a4:"RafTek richt zich momenteel op projecten en partnerschappen in het Verenigd Koninkrijk, de Europese Unie en Turkije."
+    contact: {
+      eyebrow: "Contact RafTek",
+      title: "Vertel ons wat u wilt bereiken.",
+      body: "Bespreek een ESL-implementatie, systeemintegratievraagstuk, IoT-project of commerciële samenwerking.",
+      directLabel: "Liever e-mail?",
+      regions: "VK · Europese Unie · Turkije"
     },
-    contact:{
-      eyebrow:"Contact RafTek", title:"Plant u een ESL-, IoT- of systeemintegratieproject?",
-      body:"Neem contact op om een ESL-implementatie, technische behoefte, commerciële kans of samenwerking te bespreken.",
-      label:"Zakelijke vragen", regions:"VK · Europese Unie · Turkije"
+    form: {
+      name: "Naam",
+      namePlaceholder: "Uw naam",
+      company: "Bedrijf",
+      companyPlaceholder: "Bedrijfsnaam",
+      email: "Zakelijk e-mailadres",
+      emailPlaceholder: "u@bedrijf.nl",
+      phone: "Telefoon",
+      phonePlaceholder: "Optioneel",
+      interest: "Waarmee kunnen wij helpen?",
+      select: "Selecteer een optie",
+      optionEsl: "Electronic Shelf Labels",
+      optionIntegration: "Systeemintegratie",
+      optionIot: "IoT-advies",
+      optionPartnership: "Commercieel / technologiepartnerschap",
+      optionOther: "Anders",
+      message: "Vertel kort over uw requirements",
+      messagePlaceholder: "Aantal winkels, geschat aantal labels, huidige systemen, projectdoel of andere relevante informatie.",
+      consent: "Ik ga ermee akkoord dat RafTek de ingediende informatie gebruikt om op deze aanvraag te reageren.",
+      submit: "Verstuur aanvraag",
+      note: "Uw gegevens worden alleen gebruikt om op uw aanvraag te reageren. Zie onze Privacyverklaring."
     },
-    footer:{tagline:"Electronic Shelf Label-oplossingen & IoT-advies", contact:"Contact", links:"Informatie", privacy:"Privacy", rights:"Alle rechten voorbehouden."},
-    privacy:{
-      eyebrow:"Privacy", title:"Privacyverklaring", updated:"Laatst bijgewerkt: 8 augustus 2026",
-      intro:"RafTek beheert raftek.net. Deze website is een eenvoudige informatieve website en biedt geen gebruikersaccounts, online aankopen of contactformulieren.",
-      dataTitle:"Informatie die wij ontvangen", dataBody:"Als u RafTek per e-mail benadert, ontvangen wij de informatie die u zelf verstuurt, waaronder uw e-mailadres en de inhoud van uw bericht.",
-      useTitle:"Hoe informatie wordt gebruikt", useBody:"Informatie die per e-mail wordt ontvangen, wordt gebruikt om vragen te beantwoorden, potentiële projecten en samenwerkingen te bespreken en relevante zakelijke correspondentie te bewaren.",
-      cookiesTitle:"Cookies en analytics", cookiesBody:"Deze versie van de website gebruikt bewust geen advertentiecookies, trackingcookies of analytics van derden.",
-      contactTitle:"Privacyvragen", contactBody:"Voor privacygerelateerde vragen kunt u contact opnemen via contact@raftek.net.",
-      back:"← Terug naar RafTek"
+    footer: {
+      tagline: "Electronic Shelf Label-oplossingen & IoT-advies",
+      contact: "Contact",
+      regionsLabel: "Regio's",
+      regions: "VK · Europese Unie · Turkije",
+      info: "Informatie",
+      privacy: "Privacyverklaring",
+      rights: "Alle rechten voorbehouden."
+    },
+    privacy: {
+      eyebrow: "Privacy",
+      title: "Privacyverklaring",
+      updated: "Laatst bijgewerkt: 8 augustus 2026",
+      intro: "RafTek beheert raftek.net. Deze website geeft informatie over de diensten van RafTek en maakt het mogelijk om zakelijke aanvragen in te dienen.",
+      dataTitle: "Informatie die wij ontvangen",
+      dataBody: "Als u RafTek per e-mail benadert of het aanvraagformulier gebruikt, ontvangen wij de informatie die u zelf opgeeft, zoals uw naam, bedrijf, e-mailadres, telefoonnummer en bericht.",
+      useTitle: "Hoe informatie wordt gebruikt",
+      useBody: "Informatie wordt gebruikt om aanvragen te beantwoorden, potentiële projecten en partnerschappen te bespreken en relevante zakelijke correspondentie te onderhouden.",
+      formTitle: "Websiteformulier",
+      formBody: "Het aanvraagformulier gebruikt FormSubmit als externe formulierdienst. Informatie die in het formulier wordt ingevoerd, wordt via deze dienst verzonden zodat de aanvraag per e-mail bij RafTek kan worden afgeleverd.",
+      cookiesTitle: "Cookies en analytics",
+      cookiesBody: "RafTek gebruikt in deze versie van de website bewust geen advertentiecookies of externe analytics. De formulierprovider kan beveiligings- of anti-spammaatregelen toepassen wanneer een formulier wordt verzonden.",
+      contactTitle: "Privacyvragen",
+      contactBody: "Voor privacyvragen kunt u contact opnemen via contact@raftek.net.",
+      back: "← Terug naar RafTek"
+    },
+    thanks: {
+      eyebrow: "Aanvraag ontvangen",
+      title: "Bedankt voor uw bericht aan RafTek.",
+      body: "Uw aanvraag is verzonden. Wij bekijken de informatie en reageren via de contactgegevens die u hebt opgegeven.",
+      back: "Terug naar RafTek"
     }
   },
 
@@ -240,116 +402,197 @@ const translations = {
       title: "RafTek | Elektronik Raf Etiketi Çözümleri & IoT Danışmanlığı",
       description: "RafTek, Birleşik Krallık, AB ve Türkiye'deki perakendeciler ve teknoloji ortakları için Elektronik Raf Etiketi çözümleri, IoT danışmanlığı ve sistem entegrasyonu sunar."
     },
-    nav: {solutions:"ESL Çözümleri", benefits:"Faydalar", projects:"Kullanım Alanları", consultancy:"IoT Danışmanlığı", contact:"İletişim"},
+    nav: {
+      solutions: "ESL Çözümleri",
+      benefits: "Neden ESL",
+      capabilities: "Yetenekler",
+      consultancy: "IoT Danışmanlığı",
+      contact: "İletişim"
+    },
     hero: {
-      eyebrow:"Elektronik Raf Etiketi Çözümleri & IoT",
-      title:"Modern perakende için Elektronik Raf Etiketi çözümleri.",
-      body:"RafTek, perakendecilerin ölçeklenebilir ESL sistemlerini değerlendirmesine, entegre etmesine ve devreye almasına yardımcı olur — donanım ve bağlantıdan yazılım entegrasyonu ve yaygınlaştırmaya kadar.",
-      ctaPrimary:"ESL Çözümlerini İncele",
-      ctaSecondary:"Bir Projeyi Görüşelim",
-      region:"Birleşik Krallık · Avrupa Birliği · Türkiye",
-      capability:"Donanım · Yazılım · Bulut · Entegrasyon"
+      eyebrow: "Elektronik Raf Etiketi Çözümleri & IoT",
+      title: "Modern perakende için daha akıllı raf teknolojisi.",
+      body: "RafTek, perakendecilerin fiyat yönetimini ve bağlantılı mağaza operasyonlarını modernleştirmesine yardımcı olan elektronik raf etiketi çözümleri, sistem entegrasyonu ve IoT uzmanlığı sunar.",
+      ctaPrimary: "ESL Çözümlerini İncele",
+      ctaSecondary: "RafTek ile Görüşün"
     },
-    architecture:{
-      kicker:"Bağlantılı perakende mimarisi",
-      sourceTitle:"POS / ERP / Ürün Verisi", sourceBody:"Fiyatlar, ürünler ve kampanyalar",
-      platformTitle:"RafTek Yönetim & Entegrasyon", platformBody:"İş akışları, izleme ve API entegrasyonu",
-      gatewayTitle:"ESL Ağ Geçidi / Erişim Noktası", gatewayBody:"Mağaza bağlantısı",
-      labelsTitle:"Elektronik Raf Etiketleri", labelsBody:"Dijital raf bilgisi"
+    proof: {
+      eslTitle: "Elektronik Raf Etiketleri",
+      eslBody: "Donanım, bağlantı ve yönetim",
+      integrationTitle: "Sistem Entegrasyonu",
+      integrationBody: "POS, ERP, API ve middleware bağlantısı",
+      iotTitle: "IoT Danışmanlığı",
+      iotBody: "Bağlantılı altyapı ve bulut mimarisi",
+      regionsTitle: "Uluslararası Kapsam",
+      regionsBody: "Birleşik Krallık, Avrupa Birliği ve Türkiye"
     },
-    about:{
-      eyebrow:"RafTek Hakkında",
-      title:"Gerçek perakende operasyonlarına göre tasarlanmış pratik teknoloji.",
-      p1:"RafTek, Birleşik Krallık, Avrupa Birliği ve Türkiye'deki perakendecileri ve teknoloji ortaklarını destekleyen bir Elektronik Raf Etiketi çözüm sağlayıcısı ve IoT danışmanlığıdır.",
-      p2:"İşletmelerin manuel raf süreçlerinden bağlantılı dijital altyapıya geçmesine yardımcı olmak için donanım değerlendirmesi, bağlantı, bulut mimarisi, yazılım entegrasyonu ve devreye alma planlamasını bir araya getiriyoruz."
+    about: {
+      eyebrow: "RafTek Hakkında",
+      title: "Gereksiz karmaşıklık olmadan perakende teknolojisi.",
+      p1: "RafTek, Birleşik Krallık, Avrupa Birliği ve Türkiye'deki perakendecileri ve teknoloji ortaklarını destekleyen bir Elektronik Raf Etiketi çözüm sağlayıcısı ve IoT danışmanlığıdır.",
+      p2: "Elektronik raf etiketlerini, mağaza bağlantısını, bulut mimarisini ve iş sistemi entegrasyonunu bir araya getirerek perakende ortamlarında ölçeklenebilen pratik çözümler sunuyoruz."
     },
-    solutions:{
-      eyebrow:"ESL Çözümleri", title:"Raf etiketinden yönetim platformuna kadar.",
-      body:"RafTek, uçtan uca bir ESL kurulumu için gereken bileşenleri bir araya getirir ve uygulama riskini azaltıp ölçeklenebilir yayılımı desteklemek için aşamalı bir kurulum yaklaşımı kullanır.",
-      labelsTitle:"Elektronik Raf Etiketleri",
-      labelsBody:"Ürün, fiyat ve kampanya bilgileri için e-kâğıt raf ekranları; proje gereksinimlerine göre farklı boyut ve renk seçenekleri.",
-      apTitle:"Erişim Noktaları & Ağ Geçitleri",
-      apBody:"Merkezi yönetim sistemleri ile mağazadaki etiketler arasında bağlantı sağlar ve uyumlu donanımla uzaktan güncelleme iş akışlarını destekler.",
-      platformTitle:"Yönetim & Entegrasyon",
-      platformBody:"ESL altyapısını iş sistemlerine bağlamak üzere tasarlanan ürün ve fiyat iş akışları, etiket eşleştirme, izleme ve API tabanlı entegrasyon.",
-      deployTitle:"Kurulum & Destek",
-      deployBody:"Gereksinim analizi, çözüm tasarımı, teknik kurulum, yaygınlaştırma planlaması ve büyüyen ESL altyapısı için operasyonel destek."
+    solutions: {
+      eyebrow: "ESL Çözümleri",
+      title: "Eksiksiz bir elektronik raf etiketi çözümü.",
+      body: "Raftaki etiketten onu yöneten sistemlere kadar RafTek, güvenilir ESL kurulumu için gereken teknik yapı taşlarını sağlar.",
+      labelsTitle: "Elektronik Raf Etiketleri",
+      labelsBody: "Farklı perakende ortamlarına uygun seçeneklerle ürün, fiyat ve kampanya bilgileri için e-kâğıt ekranlar.",
+      connectTitle: "Mağaza Bağlantısı",
+      connectBody: "Merkezi olarak yönetilen verileri mağaza genelinde kullanılan etiketlerle bağlayan erişim noktaları ve ağ geçidi mimarisi.",
+      manageTitle: "Yönetim & Entegrasyon",
+      manageBody: "POS, ERP, API, middleware veya dosya tabanlı iş süreçlerine bağlı ürün, fiyat ve etiket yönetim iş akışları.",
+      deployTitle: "Kurulum & Destek",
+      deployBody: "Tek veya çok lokasyonlu yapılar için gereksinim analizi, teknik yapılandırma, yayılım planlaması ve operasyonel destek."
     },
-    benefits:{
-      eyebrow:"İş Değeri", title:"Perakendeciler neden kâğıttan elektronik raf etiketlerine geçiyor?",
-      speedTitle:"Daha hızlı fiyat değişiklikleri", speedBody:"Kâğıt etiketleri yazdırıp tek tek değiştirmek yerine raf fiyatlarını merkezi olarak güncelleyin.",
-      accuracyTitle:"Daha yüksek fiyat doğruluğu", accuracyBody:"Raf fiyatlarının merkezi olarak yönetilen ürün verileriyle uyumsuz hale gelme riskini azaltın.",
-      labourTitle:"Daha az manuel iş yükü", labourBody:"Kâğıt raf etiketlerinin yazdırılması, ayrılması, dağıtılması ve değiştirilmesi gibi tekrarlayan işleri azaltın.",
-      dynamicTitle:"Daha esnek kampanyalar", dynamicBody:"Aynı raf operasyonu yükünü oluşturmadan daha sık fiyat ve kampanya değişikliklerini destekleyin.",
-      centralTitle:"Merkezi yönetim", centralBody:"Departmanlar, mağazalar veya lokasyonlar arasında tutarlı bir güncelleme süreci oluşturun.",
-      scaleTitle:"Aşamalı yayılım", scaleBody:"Daha geniş yayılımdan önce bağlantıyı, iş akışlarını ve operasyonel gereksinimleri aşamalı bir kurulum modeliyle doğrulayın.",
-      ctaTitle:"ESL'in mağazalarınız için ticari olarak uygun olup olmadığından emin değil misiniz?",
-      ctaBody:"Etiket adetleri, altyapı, entegrasyon ihtiyaçları ve kurulum kapsamının değerlendirilmesine yardımcı olabiliriz.",
-      ctaButton:"ESL Değerlendirmesi İsteyin"
+    benefits: {
+      eyebrow: "Neden ESL",
+      title: "Raf fiyatlandırmasını bağlantılı dijital bir sürece dönüştürün.",
+      speedTitle: "Daha hızlı fiyat değişiklikleri",
+      speedBody: "Kâğıt etiketleri yazdırıp tek tek değiştirmek yerine raf fiyatlarını merkezi olarak güncelleyin.",
+      accuracyTitle: "Daha yüksek fiyat doğruluğu",
+      accuracyBody: "Raf fiyatlarının merkezi ürün verileriyle uyumsuz hale gelme riskini azaltın.",
+      workTitle: "Daha az manuel iş yükü",
+      workBody: "Kâğıt raf etiketlerinin yazdırılması, ayrılması, dağıtılması ve değiştirilmesi gibi tekrarlayan işleri azaltın.",
+      promoTitle: "Daha esnek kampanyalar",
+      promoBody: "Aynı raf operasyonu yükünü oluşturmadan daha sık fiyat ve kampanya değişikliklerini destekleyin.",
+      centralTitle: "Merkezi yönetim",
+      centralBody: "Departmanlar, mağazalar ve lokasyonlar arasında tutarlı bir güncelleme süreci oluşturun.",
+      scaleTitle: "Ölçeklenebilir kurulum",
+      scaleBody: "Mağaza ihtiyaçları ve iş öncelikleriyle birlikte büyüyebilen yapılandırılmış bir yayılım modeli kullanın."
     },
-    projects:{
-      eyebrow:"Uygulamada Çözümler", title:"Perakende ortamları için pratik ESL ve IoT çözümleri.",
-      body:"RafTek çözümleri; merkezi fiyat yönetimi, uzaktan etiket yönetimi, çok lokasyonlu kurulum ve mevcut iş sistemleriyle entegrasyon gibi yaygın perakende ihtiyaçları için tasarlanmıştır.",
-      retailStatus:"Perakende ESL", retailContext:"Mağaza kurulumu", retailTitle:"Perakende ESL kurulumu",
-      retailBody:"Elektronik etiketleri, mağaza bağlantısını, uzaktan güncellemeleri ve merkezi yönetimi ölçeklenebilir perakende operasyonları için bir araya getiren uçtan uca raf dijitalleştirme modeli.",
-      retail1:"Yüzlerce etiketten binlerce ESL'e kadar esnek kurulumlar", retail2:"Bulut üzerinden yönetilen mimari", retail3:"Uzaktan fiyat ve ürün bilgisi güncellemeleri", retail4:"Çok lokasyonlu yayılım ve merkezi yönetim",
-      integrationStatus:"Sistem Entegrasyonu", integrationType:"Bağlantılı perakende", integrationTitle:"ESL yönetimi & sistem entegrasyonu",
-      integrationBody:"Ürün ve fiyat verilerini ESL yönetim sistemleri, middleware, erişim noktaları ve uzaktan etiket güncelleme iş akışlarıyla bağlayan entegrasyon hizmetleri.",
-      integration1:"API, middleware ve dosya tabanlı entegrasyon", integration2:"Uzaktan etiket güncelleme mimarisi", integration3:"Ürün, fiyat ve etiket yönetim iş akışları", integration4:"Tedarikçi esnekliğine sahip entegrasyon yaklaşımı"
+    capabilities: {
+      eyebrow: "Perakende ESL Yeteneği",
+      title: "Perakendecilerin gerçek çalışma biçimine göre tasarlandı.",
+      body: "RafTek, bağlantılı perakende için raf donanımını, uzaktan yönetimi ve entegrasyon uzmanlığını pratik bir operasyon modelinde birleştirir.",
+      storeLabel: "MAĞAZA OPERASYONLARI",
+      storeTitle: "Dijital raf yönetimi",
+      storeBody: "Mağaza ekipleri için net bir operasyon süreci korurken elektronik raf etiketlerindeki fiyat ve ürün bilgisi güncellemelerini merkezileştirin.",
+      store1: "Uzaktan fiyat güncellemeleri",
+      store2: "Ürün bilgisi yönetimi",
+      store3: "Tek ve çok lokasyonlu operasyon",
+      store4: "Bulut üzerinden yönetilen bağlantı",
+      systemLabel: "SİSTEM ENTEGRASYONU",
+      systemTitle: "Mevcut iş sistemleriyle bağlantılı",
+      systemBody: "Ürün ve fiyat verilerini, mevcut teknoloji ortamına en uygun entegrasyon yöntemiyle ESL yönetim sistemlerine bağlayın.",
+      system1: "API entegrasyonu",
+      system2: "Middleware bağlantısı",
+      system3: "Dosya tabanlı iş akışları",
+      system4: "Tedarikçi esnekliğine sahip mimari",
+      note: "Mağazalarınız için doğru etiket adedini, bağlantı modelini veya entegrasyon yöntemini belirlemek mi istiyorsunuz?",
+      cta: "Gereksinimlerinizi görüşelim →"
     },
-    process:{
-      eyebrow:"Nasıl Çalışıyoruz", title:"İhtiyaçtan devreye almaya kadar yapılandırılmış bir yol.",
-      assessTitle:"Analiz", assessBody:"Mağazaları, etiket adetlerini, sistemleri, bağlantıyı ve operasyonel gereksinimleri anlayın.",
-      designTitle:"Tasarım", designBody:"Kullanım senaryosuna uygun donanım, ağ, bulut ve entegrasyon mimarisini tanımlayın.",
-      retailTitle:"Doğrulama", retailBody:"Bağlantıyı, iş akışlarını ve operasyonel gereksinimleri kontrollü bir ilk kurulumla doğrulayın.",
-      deployTitle:"Devreye Alma", deployBody:"Mağaza veya departmanlar genelinde uygulama, yapılandırma ve genişleme planını oluşturun.",
-      supportTitle:"Destek", supportBody:"Kurulum büyüdükçe sürekli teknik ve operasyonel destek sağlayın."
+    process: {
+      eyebrow: "Nasıl Çalışıyoruz",
+      title: "Gereksinimlerden yayılıma kadar net bir yol.",
+      assessTitle: "Analiz",
+      assessBody: "Mağazaları, etiket adetlerini, mevcut sistemleri, bağlantıyı ve operasyonel gereksinimleri anlayın.",
+      designTitle: "Tasarım",
+      designBody: "Operasyon ortamına uygun donanım, ağ, bulut ve entegrasyon mimarisini tanımlayın.",
+      validateTitle: "Doğrulama",
+      validateBody: "Bağlantıyı, iş akışlarını ve operasyonel gereksinimleri kontrollü bir ilk kurulumla doğrulayın.",
+      deployTitle: "Devreye Alma",
+      deployBody: "Çözümü mağaza veya departmanlar genelinde yapılandırın, uygulayın ve genişletin.",
+      supportTitle: "Destek",
+      supportBody: "Kurulu ortam için teknik ve operasyonel destek sağlayın."
     },
-    consultancy:{
-      eyebrow:"IoT Danışmanlığı", title:"ESL'in ötesinde: birlikte çalışan bağlantılı sistemler.",
-      body:"RafTek ayrıca cihazların, ağ geçitlerinin, bulut servislerinin ve iş uygulamalarının tek çözüm olarak çalışması gereken IoT ve sistem entegrasyonu projelerini destekler.",
-      item1Title:"Bağlantı & ağ geçitleri", item1Body:"Ağ ve cihaz bağlantı tasarımı.",
-      item2Title:"API & SDK entegrasyonu", item2Body:"Cihazları ve tedarikçi platformlarını iş sistemlerine bağlama.",
-      item3Title:"Bulut mimarisi", item3Body:"Maliyet odaklı barındırma ve uzaktan yönetim tasarımları.",
-      item4Title:"Teknik tedarikçi değerlendirmesi", item4Body:"Donanım, entegrasyon modeli ve operasyonel seçeneklerin karşılaştırılması."
+    consultancy: {
+      eyebrow: "IoT Danışmanlığı",
+      title: "Rafın ötesinde bağlantılı altyapı.",
+      body: "RafTek, cihazların, ağ geçitlerinin, bulut servislerinin ve iş uygulamalarının tek bir uyumlu çözüm olarak çalışması gereken IoT ve sistem entegrasyonu ihtiyaçlarını destekler.",
+      cta: "IoT ihtiyacınızı görüşelim",
+      item1Title: "Bağlantı & ağ geçitleri",
+      item1Body: "Ağ ve cihaz bağlantı tasarımı.",
+      item2Title: "API & SDK entegrasyonu",
+      item2Body: "Cihazları ve tedarikçi platformlarını iş sistemlerine bağlama.",
+      item3Title: "Bulut mimarisi",
+      item3Body: "Maliyet odaklı barındırma ve uzaktan yönetim mimarisi.",
+      item4Title: "Teknik tedarikçi değerlendirmesi",
+      item4Body: "Donanım, entegrasyon modeli ve operasyonel seçeneklerin karşılaştırılması."
     },
-    opportunities:{
-      eyebrow:"İş Birlikleri & Fırsatlar", title:"Ticari ve teknoloji ortaklıklarına açığız.",
-      body:"ESL veya IoT kabiliyetinin değer katabileceği perakendeciler, POS ve ERP sağlayıcıları, sistem entegratörleri, donanım üreticileri ve diğer teknoloji ortaklarıyla görüşmeye açığız.",
-      retail:"Perakendeciler", pos:"POS & ERP sağlayıcıları", integrators:"Sistem entegratörleri", hardware:"Donanım üreticileri", iot:"IoT teknoloji ortakları",
-      cta:"İş birliğini görüşelim →"
+    partners: {
+      eyebrow: "İş Birlikleri",
+      title: "Teknoloji ekosistem bağlantılı olduğunda daha iyi çalışır.",
+      body: "RafTek, ESL veya IoT yeteneğinin değer katabileceği perakendeciler, POS ve ERP sağlayıcıları, sistem entegratörleri, donanım üreticileri ve teknoloji ortaklarıyla çalışır.",
+      retail: "Perakendeciler",
+      pos: "POS & ERP sağlayıcıları",
+      integrators: "Sistem entegratörleri",
+      hardware: "Donanım üreticileri",
+      iot: "IoT teknoloji ortakları"
     },
-    regions:{
-      eyebrow:"Faaliyet Bölgeleri", title:"Birleşik Krallık, Avrupa Birliği ve Türkiye.",
-      ukTitle:"Birleşik Krallık", ukBody:"Perakende ve teknoloji projeleri.",
-      euTitle:"Avrupa Birliği", euBody:"Sınır ötesi danışmanlık ve teknoloji entegrasyonu.",
-      trTitle:"Türkiye", trBody:"ESL çözümleri, kurulum ve ticari destek."
+    faq: {
+      eyebrow: "SSS",
+      title: "Sık sorulan sorular.",
+      intro: "İşletmelerin ESL değerlendirirken genellikle ele aldığı bazı sorular.",
+      q1: "RafTek, ESL'leri mevcut ürün veya fiyat sistemleriyle entegre edebilir mi?",
+      a1: "Evet. Entegrasyon, mevcut sistemlere ve tedarikçi ortamına bağlı olarak API, middleware veya dosya tabanlı iş akışlarıyla gerçekleştirilebilir.",
+      q2: "Tüm mağazayı bir kerede değiştirmek zorunda mıyız?",
+      a2: "Hayır. RafTek aşamalı kurulumları destekler; böylece donanım, bağlantı ve operasyonel süreçler kontrollü şekilde devreye alınabilir ve ardından mağaza genelinde genişletilebilir.",
+      q3: "RafTek yalnızca tek bir ESL üreticisiyle mi çalışıyor?",
+      a3: "Hayır. RafTek tedarikçi esnekliğine sahip bir yaklaşım kullanır ve donanım ile entegrasyon seçeneklerini proje gereksinimleri, uyumluluk ve ticari uygunluğa göre seçer.",
+      q4: "RafTek hangi pazarlarda hizmet veriyor?",
+      a4: "RafTek, Birleşik Krallık, Avrupa Birliği ve Türkiye'deki proje ve iş birliklerini destekler."
     },
-    faq:{
-      eyebrow:"SSS", title:"Sık sorulan sorular.",
-      q1:"RafTek, ESL'leri mevcut ürün veya fiyat sistemleriyle entegre edebilir mi?",
-      a1:"Entegrasyon ilgili sistemlere bağlıdır; ancak API, middleware ve dosya tabanlı iş akışları çözüm tasarımının parçası olarak değerlendirilebilir.",
-      q2:"Tüm mağazayı bir kerede değiştirmek zorunda mıyız?",
-      a2:"Hayır. RafTek aşamalı kurulumları destekler; böylece donanım, bağlantı ve operasyonel süreçler daha geniş yayılımdan önce doğrulanabilir.",
-      q3:"RafTek yalnızca tek bir ESL üreticisiyle mi çalışıyor?",
-      a3:"Hayır. RafTek tedarikçi esnekliğine sahip bir yaklaşım kullanır ve donanım ile entegrasyon seçeneklerini proje gereksinimleri, uyumluluk ve ticari uygunluğa göre seçer.",
-      q4:"Hangi pazarlarda hizmet veriyorsunuz?",
-      a4:"RafTek şu anda Birleşik Krallık, Avrupa Birliği ve Türkiye'deki proje ve iş birliklerine odaklanmaktadır."
+    contact: {
+      eyebrow: "RafTek ile İletişim",
+      title: "Neyi başarmak istediğinizi bize anlatın.",
+      body: "ESL kurulumu, sistem entegrasyonu ihtiyacı, IoT projesi veya ticari iş birliğini görüşün.",
+      directLabel: "E-posta mı tercih ediyorsunuz?",
+      regions: "Birleşik Krallık · Avrupa Birliği · Türkiye"
     },
-    contact:{
-      eyebrow:"RafTek ile İletişim", title:"Bir ESL, IoT veya sistem entegrasyonu projesi mi planlıyorsunuz?",
-      body:"Bir ESL kurulumu, teknik ihtiyaç, ticari fırsat veya iş birliğini görüşmek için bizimle iletişime geçin.",
-      label:"Ticari iletişim", regions:"Birleşik Krallık · Avrupa Birliği · Türkiye"
+    form: {
+      name: "Ad Soyad",
+      namePlaceholder: "Adınız",
+      company: "Şirket",
+      companyPlaceholder: "Şirket adı",
+      email: "İş e-postası",
+      emailPlaceholder: "siz@sirket.com",
+      phone: "Telefon",
+      phonePlaceholder: "İsteğe bağlı",
+      interest: "Nasıl yardımcı olabiliriz?",
+      select: "Bir seçenek seçin",
+      optionEsl: "Elektronik Raf Etiketleri",
+      optionIntegration: "Sistem Entegrasyonu",
+      optionIot: "IoT Danışmanlığı",
+      optionPartnership: "Ticari / Teknoloji İş Birliği",
+      optionOther: "Diğer",
+      message: "Gereksinimlerinizi kısaca anlatın",
+      messagePlaceholder: "Mağaza sayısı, yaklaşık etiket adedi, mevcut sistemler, proje amacı veya faydalı olabilecek diğer bilgiler.",
+      consent: "RafTek'in burada gönderdiğim bilgileri bu talebe yanıt vermek amacıyla kullanmasını kabul ediyorum.",
+      submit: "Talebi gönder",
+      note: "Bilgileriniz yalnızca talebinize yanıt vermek için kullanılır. Gizlilik Bildirimimize bakın."
     },
-    footer:{tagline:"Elektronik Raf Etiketi Çözümleri & IoT Danışmanlığı", contact:"İletişim", links:"Bilgi", privacy:"Gizlilik", rights:"Tüm hakları saklıdır."},
-    privacy:{
-      eyebrow:"Gizlilik", title:"Gizlilik bildirimi", updated:"Son güncelleme: 8 Ağustos 2026",
-      intro:"RafTek, raftek.net sitesini işletir. Bu site basit bir bilgilendirme sitesidir; kullanıcı hesabı, çevrim içi satın alma veya iletişim formu sunmaz.",
-      dataTitle:"Aldığımız bilgiler", dataBody:"RafTek'e e-posta gönderdiğinizde, e-posta adresiniz ve mesaj içeriğiniz dahil olmak üzere kendi tercihinizle gönderdiğiniz bilgileri alırız.",
-      useTitle:"Bilgiler nasıl kullanılır", useBody:"E-posta ile alınan bilgiler, soruları yanıtlamak, potansiyel proje ve iş birliklerini görüşmek ve ilgili ticari yazışmaları sürdürmek için kullanılır.",
-      cookiesTitle:"Çerezler ve analiz", cookiesBody:"Sitenin bu sürümü bilinçli olarak reklam çerezleri, takip çerezleri veya üçüncü taraf analiz araçları kullanmaz.",
-      contactTitle:"Gizlilik soruları", contactBody:"Gizlilikle ilgili sorular için contact@raftek.net adresinden bize ulaşabilirsiniz.",
-      back:"← RafTek'e dön"
+    footer: {
+      tagline: "Elektronik Raf Etiketi Çözümleri & IoT Danışmanlığı",
+      contact: "İletişim",
+      regionsLabel: "Bölgeler",
+      regions: "Birleşik Krallık · Avrupa Birliği · Türkiye",
+      info: "Bilgi",
+      privacy: "Gizlilik Bildirimi",
+      rights: "Tüm hakları saklıdır."
+    },
+    privacy: {
+      eyebrow: "Gizlilik",
+      title: "Gizlilik Bildirimi",
+      updated: "Son güncelleme: 8 Ağustos 2026",
+      intro: "RafTek, raftek.net sitesini işletir. Bu site RafTek hizmetleri hakkında bilgi sağlar ve potansiyel müşteri ve iş ortaklarının talep göndermesine olanak tanır.",
+      dataTitle: "Aldığımız bilgiler",
+      dataBody: "RafTek'e e-posta gönderdiğinizde veya web sitesi talep formunu kullandığınızda; ad, şirket, e-posta adresi, telefon numarası ve mesaj gibi kendi tercihinizle verdiğiniz bilgileri alırız.",
+      useTitle: "Bilgiler nasıl kullanılır",
+      useBody: "Bilgiler, taleplere yanıt vermek, potansiyel proje ve iş birliklerini görüşmek ve ilgili ticari yazışmaları sürdürmek için kullanılır.",
+      formTitle: "Web sitesi talep formu",
+      formBody: "Web sitesi talep formu, üçüncü taraf form iletim hizmeti olarak FormSubmit'i kullanır. Forma girilen bilgiler, talebin RafTek'e e-posta yoluyla ulaşabilmesi için bu hizmet üzerinden iletilir.",
+      cookiesTitle: "Çerezler ve analiz",
+      cookiesBody: "RafTek, sitenin bu sürümünde bilinçli olarak reklam çerezleri veya üçüncü taraf analiz araçları kullanmaz. Form sağlayıcısı, form gönderildiğinde güvenlik veya spam önleme önlemleri uygulayabilir.",
+      contactTitle: "Gizlilik soruları",
+      contactBody: "Gizlilikle ilgili sorular için contact@raftek.net adresinden bize ulaşabilirsiniz.",
+      back: "← RafTek'e dön"
+    },
+    thanks: {
+      eyebrow: "Talep alındı",
+      title: "RafTek ile iletişime geçtiğiniz için teşekkür ederiz.",
+      body: "Talebiniz gönderildi. Sağladığınız bilgileri inceleyip mesajınızdaki iletişim bilgilerini kullanarak yanıt vereceğiz.",
+      back: "RafTek'e dön"
     }
   }
 };
@@ -362,15 +605,31 @@ function setLanguage(lang) {
   if (!translations[lang]) lang = "en";
 
   document.documentElement.lang = lang;
-  const isPrivacyPage = Boolean(document.querySelector('[data-i18n="privacy.title"]'));
-  document.title = isPrivacyPage ? `${translations[lang].privacy.title} | RafTek` : translations[lang].meta.title;
+
+  const isPrivacy = Boolean(document.querySelector('[data-i18n="privacy.title"]'));
+  const isThanks = Boolean(document.querySelector('[data-i18n="thanks.title"]'));
+
+  if (isPrivacy) {
+    document.title = `${translations[lang].privacy.title} | RafTek`;
+  } else if (isThanks) {
+    document.title = `${translations[lang].thanks.title} | RafTek`;
+  } else {
+    document.title = translations[lang].meta.title;
+  }
 
   const metaDescription = document.querySelector('meta[name="description"]');
-  if (metaDescription) metaDescription.setAttribute("content", translations[lang].meta.description);
+  if (metaDescription && !isPrivacy && !isThanks) {
+    metaDescription.setAttribute("content", translations[lang].meta.description);
+  }
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const value = getByPath(translations[lang], element.dataset.i18n);
     if (typeof value === "string") element.textContent = value;
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const value = getByPath(translations[lang], element.dataset.i18nPlaceholder);
+    if (typeof value === "string") element.setAttribute("placeholder", value);
   });
 
   document.querySelectorAll(".lang-button").forEach((button) => {
@@ -386,8 +645,7 @@ document.querySelectorAll(".lang-button").forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
 
-const savedLanguage = localStorage.getItem("raftek-language");
-setLanguage(savedLanguage || "en");
+setLanguage(localStorage.getItem("raftek-language") || "en");
 
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
