@@ -4,129 +4,444 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>RafTek | ESL Solutions & IoT Consultancy</title>
-  <meta name="description" content="RafTek provides Electronic Shelf Label solutions and IoT consultancy for businesses across the UK, EU and Turkey." />
+  <title>RafTek | Electronic Shelf Label Solutions & IoT Consultancy</title>
+  <meta name="description" content="RafTek provides Electronic Shelf Label solutions, IoT consultancy and systems integration for retailers and technology partners across the UK, EU and Turkey." />
+  <meta name="theme-color" content="#0b1325" />
 
+  <link rel="canonical" href="https://raftek.net/" />
   <link rel="stylesheet" href="style.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="RafTek | Electronic Shelf Label Solutions & IoT Consultancy" />
+  <meta property="og:description" content="ESL solutions, IoT consultancy and systems integration across the UK, EU and Turkey." />
+  <meta property="og:url" content="https://raftek.net/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RafTek",
+    "url": "https://raftek.net",
+    "email": "contact@raftek.net",
+    "description": "Electronic Shelf Label solutions, IoT consultancy and systems integration.",
+    "areaServed": [
+      {"@type": "Country", "name": "United Kingdom"},
+      {"@type": "AdministrativeArea", "name": "European Union"},
+      {"@type": "Country", "name": "Turkey"}
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
   <header class="site-header">
     <div class="container nav">
-      <div class="logo">RafTek</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#markets">Markets</a>
-        <a href="#contact">Contact</a>
+      <a class="brand" href="#top" aria-label="RafTek home">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span>RafTek</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#solutions" data-i18n="nav.solutions">ESL Solutions</a>
+        <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
+        <a href="#use-cases" data-i18n="nav.projects">Use Cases</a>
+        <a href="#consultancy" data-i18n="nav.consultancy">IoT Consultancy</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
+
+      <div class="language-switcher" aria-label="Language">
+        <button type="button" class="lang-button active" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-button" data-lang="nl" aria-pressed="false">NL</button>
+        <button type="button" class="lang-button" data-lang="tr" aria-pressed="false">TR</button>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-content">
-        <p class="eyebrow">ESL Solutions & IoT Consultancy</p>
-        <h1>Practical digital infrastructure for modern retail operations.</h1>
-        <p class="hero-text">
-          RafTek helps retailers and technology partners assess, integrate and deploy Electronic Shelf Label systems and IoT-enabled operational solutions across the UK, EU and Turkey.
-        </p>
-        <a class="button" href="#contact">Contact RafTek</a>
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Electronic Shelf Label Solutions & IoT</p>
+          <h1 data-i18n="hero.title">Electronic Shelf Label solutions for modern retail.</h1>
+          <p class="hero-text" data-i18n="hero.body">
+            RafTek helps retailers assess, integrate and deploy scalable ESL systems — from hardware and connectivity to software integration and rollout.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#solutions" data-i18n="hero.ctaPrimary">Explore ESL Solutions</a>
+            <a class="button secondary" href="mailto:contact@raftek.net?subject=RafTek%20project%20enquiry" data-i18n="hero.ctaSecondary">Discuss a Project</a>
+          </div>
+
+          <div class="trust-strip" aria-label="RafTek capabilities and regions">
+            <span data-i18n="hero.region">UK · European Union · Turkey</span>
+            <span data-i18n="hero.capability">Hardware · Software · Cloud · Integration</span>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="ESL solution architecture">
+          <div class="status-row">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-i18n="architecture.kicker">Connected retail architecture</span>
+          </div>
+
+          <div class="architecture">
+            <div class="architecture-box">
+              <strong data-i18n="architecture.sourceTitle">POS / ERP / Product Data</strong>
+              <span data-i18n="architecture.sourceBody">Prices, products and promotions</span>
+            </div>
+            <div class="architecture-arrow" aria-hidden="true">↓</div>
+            <div class="architecture-box featured">
+              <strong data-i18n="architecture.platformTitle">RafTek Management & Integration</strong>
+              <span data-i18n="architecture.platformBody">Workflows, monitoring and API integration</span>
+            </div>
+            <div class="architecture-arrow" aria-hidden="true">↓</div>
+            <div class="architecture-box">
+              <strong data-i18n="architecture.gatewayTitle">ESL Gateway / Access Point</strong>
+              <span data-i18n="architecture.gatewayBody">Store connectivity</span>
+            </div>
+            <div class="architecture-arrow" aria-hidden="true">↓</div>
+            <div class="architecture-box">
+              <strong data-i18n="architecture.labelsTitle">Electronic Shelf Labels</strong>
+              <span data-i18n="architecture.labelsBody">Digital shelf-edge information</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container grid">
+    <section class="section intro">
+      <div class="container split">
         <div>
-          <p class="eyebrow">About RafTek</p>
-          <h2>Focused on reliable, commercially realistic technology adoption.</h2>
+          <p class="eyebrow" data-i18n="about.eyebrow">About RafTek</p>
+          <h2 data-i18n="about.title">Practical technology, designed around real retail operations.</h2>
         </div>
-        <div>
-          <p>
-            RafTek is an ESL solutions and IoT consultancy supporting businesses that want to modernise retail pricing, product information management and connected operational workflows.
+        <div class="body-copy">
+          <p data-i18n="about.p1">
+            RafTek is an Electronic Shelf Label solutions company and IoT consultancy supporting retailers and technology partners across the UK, European Union and Turkey.
           </p>
-          <p>
-            We work with businesses to evaluate hardware, assess integration options, simplify implementation decisions and support the transition from manual processes to digital infrastructure.
+          <p data-i18n="about.p2">
+            We combine hardware evaluation, connectivity, cloud architecture, software integration and deployment planning to help businesses move from manual shelf-edge processes to connected digital infrastructure.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section light">
+    <section class="section surface" id="solutions">
       <div class="container">
-        <p class="eyebrow">Services</p>
-        <h2>What we do</h2>
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="solutions.eyebrow">ESL Solutions</p>
+          <h2 data-i18n="solutions.title">From shelf label to management platform.</h2>
+          <p data-i18n="solutions.body">
+            RafTek brings together the components required for an end-to-end ESL deployment, with a phased deployment approach designed to reduce implementation risk and support scalable rollout.
+          </p>
+        </div>
 
-        <div class="cards">
-          <div class="card">
-            <h3>Electronic Shelf Label Solutions</h3>
-            <p>
-              Support for ESL strategy, supplier evaluation, system design, testing and deployment planning.
+        <div class="cards four">
+          <article class="card">
+            <div class="card-number">01</div>
+            <h3 data-i18n="solutions.labelsTitle">Electronic Shelf Labels</h3>
+            <p data-i18n="solutions.labelsBody">
+              E-paper shelf displays for product, price and promotional information, with multiple size and colour options depending on deployment requirements.
             </p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">02</div>
+            <h3 data-i18n="solutions.apTitle">Access Points & Gateways</h3>
+            <p data-i18n="solutions.apBody">
+              Store connectivity between central management systems and deployed labels, supporting remote update workflows with compatible hardware.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">03</div>
+            <h3 data-i18n="solutions.platformTitle">Management & Integration</h3>
+            <p data-i18n="solutions.platformBody">
+              Product and price workflows, label assignment, monitoring and API-based integration designed to connect ESL infrastructure with business systems.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">04</div>
+            <h3 data-i18n="solutions.deployTitle">Deployment & Support</h3>
+            <p data-i18n="solutions.deployBody">
+              Requirements assessment, solution design, technical setup, rollout planning and ongoing operational support for growing ESL estates.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="benefits.eyebrow">Business Case</p>
+          <h2 data-i18n="benefits.title">Why retailers move from paper to electronic shelf labels.</h2>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit">
+            <h3 data-i18n="benefits.speedTitle">Faster price changes</h3>
+            <p data-i18n="benefits.speedBody">Update shelf-edge pricing centrally instead of printing and replacing paper labels manually.</p>
+          </article>
+          <article class="benefit">
+            <h3 data-i18n="benefits.accuracyTitle">Improved pricing accuracy</h3>
+            <p data-i18n="benefits.accuracyBody">Reduce the risk of shelf prices becoming out of sync with centrally managed product data.</p>
+          </article>
+          <article class="benefit">
+            <h3 data-i18n="benefits.labourTitle">Lower manual workload</h3>
+            <p data-i18n="benefits.labourBody">Reduce repetitive printing, sorting, distributing and replacing of paper shelf labels.</p>
+          </article>
+          <article class="benefit">
+            <h3 data-i18n="benefits.dynamicTitle">More flexible promotions</h3>
+            <p data-i18n="benefits.dynamicBody">Support more frequent price and promotion changes without creating the same shelf-edge workload.</p>
+          </article>
+          <article class="benefit">
+            <h3 data-i18n="benefits.centralTitle">Centralised management</h3>
+            <p data-i18n="benefits.centralBody">Create a consistent update process across departments, stores or locations.</p>
+          </article>
+          <article class="benefit">
+            <h3 data-i18n="benefits.scaleTitle">Phased rollout</h3>
+            <p data-i18n="benefits.scaleBody">Validate connectivity, workflows and commercial assumptions through a phased deployment model before wider rollout.</p>
+          </article>
+        </div>
+
+        <div class="cta-band">
+          <div>
+            <strong data-i18n="benefits.ctaTitle">Not sure whether ESL is commercially suitable for your stores?</strong>
+            <p data-i18n="benefits.ctaBody">We can help assess your label volumes, infrastructure, integration requirements and deployment scope.</p>
           </div>
+          <a class="button light-button" href="mailto:contact@raftek.net?subject=ESL%20assessment%20enquiry" data-i18n="benefits.ctaButton">Request an ESL Assessment</a>
+        </div>
+      </div>
+    </section>
 
-          <div class="card">
-            <h3>IoT Consultancy</h3>
-            <p>
-              Practical advice on connected devices, gateways, local networks, APIs, SDKs and integration approaches.
+    <section class="section surface" id="use-cases">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="projects.eyebrow">Solutions in Practice</p>
+          <h2 data-i18n="projects.title">Practical ESL and IoT solutions for retail environments.</h2>
+          <p data-i18n="projects.body">
+            RafTek solutions are designed around common retail requirements: centralised pricing, remote label management, multi-site deployment and integration with existing business systems.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="status-badge" data-i18n="projects.retailStatus">Retail ESL</span>
+              <span data-i18n="projects.retailContext">Store deployment</span>
+            </div>
+            <h3 data-i18n="projects.retailTitle">Retail ESL deployment</h3>
+            <p data-i18n="projects.retailBody">
+              A complete shelf-edge digitisation model combining electronic labels, store connectivity, remote updates and centralised management for scalable retail operations.
             </p>
+            <ul>
+              <li data-i18n="projects.retail1">Flexible deployments from hundreds to thousands of ESLs</li>
+              <li data-i18n="projects.retail2">Cloud-managed architecture</li>
+              <li data-i18n="projects.retail3">Remote price and product-information updates</li>
+              <li data-i18n="projects.retail4">Multi-site rollout and central management</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="status-badge" data-i18n="projects.integrationStatus">Systems Integration</span>
+              <span data-i18n="projects.integrationType">Connected retail</span>
+            </div>
+            <h3 data-i18n="projects.integrationTitle">ESL management & systems integration</h3>
+            <p data-i18n="projects.integrationBody">
+              Integration services connecting product and pricing data with ESL management systems, middleware, access points and remote label-update workflows.
+            </p>
+            <ul>
+              <li data-i18n="projects.integration1">API, middleware and file-based integration</li>
+              <li data-i18n="projects.integration2">Remote label-update architecture</li>
+              <li data-i18n="projects.integration3">Product, pricing and label-management workflows</li>
+              <li data-i18n="projects.integration4">Supplier-flexible integration approach</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="process.eyebrow">How We Work</p>
+          <h2 data-i18n="process.title">A structured route from requirement to deployment.</h2>
+        </div>
+
+        <div class="process-grid">
+          <article>
+            <span>01</span>
+            <h3 data-i18n="process.assessTitle">Assess</h3>
+            <p data-i18n="process.assessBody">Understand stores, label volumes, systems, connectivity and operational requirements.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-i18n="process.designTitle">Design</h3>
+            <p data-i18n="process.designBody">Define hardware, network, cloud and integration architecture appropriate to the use case.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-i18n="process.validateTitle">Validate</h3>
+            <p data-i18n="process.validateBody">Confirm connectivity, workflows and operating requirements through a controlled initial deployment.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3 data-i18n="process.deployTitle">Deploy</h3>
+            <p data-i18n="process.deployBody">Plan implementation, configuration and expansion across stores or departments.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3 data-i18n="process.supportTitle">Support</h3>
+            <p data-i18n="process.supportBody">Provide ongoing technical and operational support as the deployment matures.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="consultancy">
+      <div class="container split">
+        <div>
+          <p class="eyebrow blue" data-i18n="consultancy.eyebrow">IoT Consultancy</p>
+          <h2 data-i18n="consultancy.title">Beyond ESL: connected systems that work together.</h2>
+          <p data-i18n="consultancy.body">
+            RafTek also supports IoT and systems-integration projects where devices, gateways, cloud services and business applications need to operate as one solution.
+          </p>
+        </div>
+
+        <div class="consultancy-list">
+          <div><strong data-i18n="consultancy.item1Title">Connectivity & gateways</strong><span data-i18n="consultancy.item1Body">Network and device connectivity design.</span></div>
+          <div><strong data-i18n="consultancy.item2Title">API & SDK integration</strong><span data-i18n="consultancy.item2Body">Connecting devices and vendor platforms to business systems.</span></div>
+          <div><strong data-i18n="consultancy.item3Title">Cloud architecture</strong><span data-i18n="consultancy.item3Body">Cost-conscious hosting and remote-management designs.</span></div>
+          <div><strong data-i18n="consultancy.item4Title">Technical supplier evaluation</strong><span data-i18n="consultancy.item4Body">Comparing hardware, integration models and operational trade-offs.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="opportunities">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="opportunities.eyebrow">Partnerships & Opportunities</p>
+          <h2 data-i18n="opportunities.title">Open to commercial and technology partnerships.</h2>
+          <p data-i18n="opportunities.body">
+            We are interested in discussions with retailers, POS and ERP providers, systems integrators, hardware manufacturers and other technology partners where ESL or IoT capability can add value.
+          </p>
+        </div>
+
+        <div class="partner-tags" aria-label="Partner types">
+          <span data-i18n="opportunities.retail">Retailers</span>
+          <span data-i18n="opportunities.pos">POS & ERP providers</span>
+          <span data-i18n="opportunities.integrators">Systems integrators</span>
+          <span data-i18n="opportunities.hardware">Hardware manufacturers</span>
+          <span data-i18n="opportunities.iot">IoT technology partners</span>
+        </div>
+
+        <a class="text-link" href="mailto:contact@raftek.net?subject=RafTek%20partnership%20discussion" data-i18n="opportunities.cta">Discuss a partnership →</a>
+      </div>
+    </section>
+
+    <section class="section surface" id="regions">
+      <div class="container split region-layout">
+        <div>
+          <p class="eyebrow" data-i18n="regions.eyebrow">Operating Regions</p>
+          <h2 data-i18n="regions.title">UK, European Union and Turkey.</h2>
+        </div>
+        <div class="region-cards">
+          <div>
+            <strong data-i18n="regions.ukTitle">United Kingdom</strong>
+            <span data-i18n="regions.ukBody">Retail and technology engagements.</span>
           </div>
-
-          <div class="card">
-            <h3>Retail Systems Integration</h3>
-            <p>
-              Guidance on connecting product, pricing and operational data with ESL platforms and backend systems.
-            </p>
+          <div>
+            <strong data-i18n="regions.euTitle">European Union</strong>
+            <span data-i18n="regions.euBody">Cross-border consultancy and technology integration.</span>
           </div>
-
-          <div class="card">
-            <h3>Operational Automation</h3>
-            <p>
-              Support for reducing manual price changes, improving consistency and creating more efficient store workflows.
-            </p>
+          <div>
+            <strong data-i18n="regions.trTitle">Turkey</strong>
+            <span data-i18n="regions.trBody">ESL solutions, deployment and commercial support.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="markets" class="section">
+    <section class="section" id="faq">
       <div class="container narrow">
-        <p class="eyebrow">Operating regions</p>
-        <h2>Supporting businesses across the UK, EU and Turkey.</h2>
-        <p>
-          RafTek works with retailers, suppliers and technology partners looking for practical ESL and IoT solutions across multiple markets. Our focus is on clear requirements, suitable technology choices and implementation models that fit real business constraints.
-        </p>
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+          <h2 data-i18n="faq.title">Common questions.</h2>
+        </div>
+
+        <details>
+          <summary data-i18n="faq.q1">Can RafTek integrate ESLs with existing product or pricing systems?</summary>
+          <p data-i18n="faq.a1">Integration depends on the systems involved, but API, middleware and file-based workflows can all be assessed as part of the solution design.</p>
+        </details>
+
+        <details>
+          <summary data-i18n="faq.q2">Do we need to replace an entire store at once?</summary>
+          <p data-i18n="faq.a2">No. RafTek supports phased deployments, allowing hardware, connectivity and operating processes to be confirmed before wider expansion.</p>
+        </details>
+
+        <details>
+          <summary data-i18n="faq.q3">Does RafTek only work with one ESL manufacturer?</summary>
+          <p data-i18n="faq.a3">No. RafTek uses a supplier-flexible approach and selects hardware and integration options according to project requirements, compatibility and commercial fit.</p>
+        </details>
+
+        <details>
+          <summary data-i18n="faq.q4">Which markets do you support?</summary>
+          <p data-i18n="faq.a4">RafTek currently focuses on projects and partnerships across the UK, European Union and Turkey.</p>
+        </details>
       </div>
     </section>
 
-    <section class="section light">
-      <div class="container narrow">
-        <p class="eyebrow">Our approach</p>
-        <h2>Clear, practical and implementation-focused.</h2>
-        <p>
-          We do not believe technology adoption should be unnecessarily complex. Our approach is to help businesses understand the available options, identify technical dependencies, manage supplier decisions and implement solutions that are reliable, scalable and commercially sensible.
-        </p>
-      </div>
-    </section>
+    <section class="section contact-section" id="contact">
+      <div class="container contact-layout">
+        <div>
+          <p class="eyebrow blue" data-i18n="contact.eyebrow">Contact RafTek</p>
+          <h2 data-i18n="contact.title">Planning an ESL, IoT or systems-integration project?</h2>
+          <p data-i18n="contact.body">
+            Contact us to discuss an ESL deployment, technical requirement, commercial opportunity or partnership.
+          </p>
+        </div>
 
-    <section id="contact" class="section contact">
-      <div class="container narrow">
-        <p class="eyebrow">Contact</p>
-        <h2>Speak to RafTek</h2>
-        <p>
-          For ESL solution enquiries, IoT consultancy or partnership discussions, contact us by email.
-        </p>
-        <p class="email">
+        <div class="contact-card">
+          <span data-i18n="contact.label">Business enquiries</span>
           <a href="mailto:contact@raftek.net">contact@raftek.net</a>
-        </p>
+          <p data-i18n="contact.regions">UK · European Union · Turkey</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>© 2026 RafTek. All rights reserved.</p>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <span>RafTek</span>
+        </a>
+        <p data-i18n="footer.tagline">Electronic Shelf Label Solutions & IoT Consultancy</p>
+      </div>
+
+      <div>
+        <strong data-i18n="footer.contact">Contact</strong>
+        <a href="mailto:contact@raftek.net">contact@raftek.net</a>
+      </div>
+
+      <div>
+        <strong data-i18n="footer.links">Information</strong>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> RafTek.</span>
+      <span data-i18n="footer.rights">All rights reserved.</span>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
