@@ -9,7 +9,8 @@ const translations = {
       benefits: "Why ESL",
       capabilities: "Capabilities",
       consultancy: "IoT Consultancy",
-      contact: "Contact"
+      contact: "Contact",
+      menu: "Menu"
     },
     hero: {
       eyebrow: "Electronic Shelf Label Solutions & IoT",
@@ -160,13 +161,15 @@ const translations = {
       optionOther: "Other",
       message: "Tell us briefly about your requirements",
       messagePlaceholder: "Store count, approximate label volume, current systems, project objective or anything else useful.",
-      consent: "I agree that RafTek may use the information submitted here to respond to this enquiry.",
+      consent: "I have read the Privacy Notice and understand that RafTek will use the information submitted here to respond to this enquiry.",
       submit: "Send enquiry",
-      note: "Your details are used only to respond to your enquiry. See our Privacy Notice."
+      note: "Your details are used only to respond to your enquiry.",
+      privacyLink: "Read our Privacy Notice"
     },
     footer: {
       tagline: "Electronic Shelf Label Solutions & IoT Consultancy",
       contact: "Contact",
+      menu: "Menu",
       regionsLabel: "Regions",
       regions: "UK · European Union · Turkey",
       info: "Information",
@@ -177,16 +180,24 @@ const translations = {
       eyebrow: "Privacy",
       title: "Privacy Notice",
       updated: "Last updated: 8 August 2026",
-      intro: "RafTek operates raftek.net. This website provides information about RafTek services and allows prospective customers and partners to submit enquiries.",
+      intro: "This notice explains how RafTek handles personal information submitted through raftek.net or sent to us directly in connection with a business enquiry.",
+      controllerTitle: "Who is responsible for your information?",
+      controllerBody: "RafTek is responsible for the business information it receives through this website. Privacy enquiries can be sent to contact@raftek.net.",
       dataTitle: "Information we receive",
-      dataBody: "If you contact RafTek by email or use the website enquiry form, we receive the information you choose to provide, such as your name, company, email address, telephone number and message.",
-      useTitle: "How information is used",
-      useBody: "Information is used to respond to enquiries, discuss potential projects and partnerships, and maintain relevant business correspondence.",
-      formTitle: "Website enquiry form",
-      formBody: "The website enquiry form uses FormSubmit as a third-party form-delivery service. Information entered into the form is transmitted through that service so the enquiry can be delivered to RafTek by email.",
+      dataBody: "Information may include your name, company, business email address, telephone number, project requirements and anything else you choose to include in your message.",
+      useTitle: "Why we use it",
+      useBody: "We use enquiry information to respond to you, understand your requirements, discuss potential services or partnerships, take steps connected with a potential business relationship, and maintain relevant business correspondence. We do not use website enquiries for unrelated marketing without an appropriate basis to do so.",
+      basisTitle: "Basis for processing",
+      basisBody: "Depending on the applicable data-protection law and the context of your enquiry, processing may be necessary to respond to a request made by you, to take steps before entering into a contract, or for RafTek's legitimate business interests in handling genuine business enquiries and maintaining business relationships.",
+      providersTitle: "Website and form service providers",
+      providersBody: "The website is hosted using GitHub Pages. GitHub may process technical information, including IP addresses, for security and operation of the hosting service. The enquiry form uses FormSubmit to transmit form submissions to RafTek by email. Relevant email and infrastructure providers may also process information as necessary to deliver and store business correspondence.",
+      retentionTitle: "How long we keep information",
+      retentionBody: "Enquiry information is retained only for as long as reasonably necessary to respond to the enquiry, manage any resulting business relationship, meet applicable legal or record-keeping requirements, or resolve disputes. Information that is no longer required is deleted or otherwise disposed of appropriately.",
       cookiesTitle: "Cookies and analytics",
-      cookiesBody: "RafTek does not intentionally use advertising cookies or third-party analytics on this version of the website. The form provider may apply security or anti-spam measures when a form is submitted.",
-      contactTitle: "Privacy enquiries",
+      cookiesBody: "RafTek does not intentionally use advertising cookies or third-party analytics on this version of the website. The form provider may use security or anti-spam measures when a form is submitted.",
+      rightsTitle: "Your rights",
+      rightsBody: "Depending on the law that applies to you, you may have rights relating to access, correction, deletion, restriction, objection, portability or other controls over your personal information. You may contact RafTek at contact@raftek.net to make a privacy request. You may also have the right to complain to the relevant data-protection authority.",
+      contactTitle: "Contact",
       contactBody: "For privacy-related enquiries, contact contact@raftek.net.",
       back: "← Back to RafTek"
     },
@@ -194,6 +205,11 @@ const translations = {
       eyebrow: "Enquiry received",
       title: "Thank you for contacting RafTek.",
       body: "Your enquiry has been submitted. We will review the information you provided and respond using the contact details in your message.",
+      back: "Return to RafTek"
+    },
+    notFound: {
+      title: "Page not found.",
+      body: "The page you requested does not exist or may have moved.",
       back: "Return to RafTek"
     }
   },
@@ -208,7 +224,8 @@ const translations = {
       benefits: "Waarom ESL",
       capabilities: "Mogelijkheden",
       consultancy: "IoT-advies",
-      contact: "Contact"
+      contact: "Contact",
+      menu: "Menu"
     },
     hero: {
       eyebrow: "Electronic Shelf Labels & IoT",
@@ -359,13 +376,15 @@ const translations = {
       optionOther: "Anders",
       message: "Vertel kort over uw requirements",
       messagePlaceholder: "Aantal winkels, geschat aantal labels, huidige systemen, projectdoel of andere relevante informatie.",
-      consent: "Ik ga ermee akkoord dat RafTek de ingediende informatie gebruikt om op deze aanvraag te reageren.",
+      consent: "Ik heb de Privacyverklaring gelezen en begrijp dat RafTek de ingediende informatie gebruikt om op deze aanvraag te reageren.",
       submit: "Verstuur aanvraag",
-      note: "Uw gegevens worden alleen gebruikt om op uw aanvraag te reageren. Zie onze Privacyverklaring."
+      note: "Uw gegevens worden alleen gebruikt om op uw aanvraag te reageren.",
+      privacyLink: "Lees onze Privacyverklaring"
     },
     footer: {
       tagline: "Electronic Shelf Label-oplossingen & IoT-advies",
       contact: "Contact",
+      menu: "Menu",
       regionsLabel: "Regio's",
       regions: "VK · Europese Unie · Turkije",
       info: "Informatie",
@@ -376,16 +395,24 @@ const translations = {
       eyebrow: "Privacy",
       title: "Privacyverklaring",
       updated: "Laatst bijgewerkt: 8 augustus 2026",
-      intro: "RafTek beheert raftek.net. Deze website geeft informatie over de diensten van RafTek en maakt het mogelijk om zakelijke aanvragen in te dienen.",
+      intro: "Deze verklaring legt uit hoe RafTek omgaat met persoonsgegevens die via raftek.net worden ingediend of rechtstreeks aan ons worden gestuurd in verband met een zakelijke aanvraag.",
+      controllerTitle: "Wie is verantwoordelijk voor uw informatie?",
+      controllerBody: "RafTek is verantwoordelijk voor de zakelijke informatie die via deze website wordt ontvangen. Privacyvragen kunnen worden gestuurd naar contact@raftek.net.",
       dataTitle: "Informatie die wij ontvangen",
-      dataBody: "Als u RafTek per e-mail benadert of het aanvraagformulier gebruikt, ontvangen wij de informatie die u zelf opgeeft, zoals uw naam, bedrijf, e-mailadres, telefoonnummer en bericht.",
-      useTitle: "Hoe informatie wordt gebruikt",
-      useBody: "Informatie wordt gebruikt om aanvragen te beantwoorden, potentiële projecten en partnerschappen te bespreken en relevante zakelijke correspondentie te onderhouden.",
-      formTitle: "Websiteformulier",
-      formBody: "Het aanvraagformulier gebruikt FormSubmit als externe formulierdienst. Informatie die in het formulier wordt ingevoerd, wordt via deze dienst verzonden zodat de aanvraag per e-mail bij RafTek kan worden afgeleverd.",
+      dataBody: "Dit kan uw naam, bedrijf, zakelijke e-mailadres, telefoonnummer, projectvereisten en andere informatie omvatten die u zelf in uw bericht opneemt.",
+      useTitle: "Waarom wij deze informatie gebruiken",
+      useBody: "Wij gebruiken informatie uit aanvragen om te reageren, uw requirements te begrijpen, mogelijke diensten of partnerschappen te bespreken, stappen te zetten rond een mogelijke zakelijke relatie en relevante zakelijke correspondentie te onderhouden. Wij gebruiken websiteaanvragen niet voor ongerelateerde marketing zonder een passende grondslag.",
+      basisTitle: "Grondslag voor verwerking",
+      basisBody: "Afhankelijk van de toepasselijke privacywetgeving en de context van uw aanvraag kan verwerking nodig zijn om op uw verzoek te reageren, stappen te nemen vóór het aangaan van een overeenkomst, of voor de gerechtvaardigde zakelijke belangen van RafTek bij het behandelen van echte zakelijke aanvragen en het onderhouden van zakelijke relaties.",
+      providersTitle: "Website- en formulierproviders",
+      providersBody: "De website wordt gehost via GitHub Pages. GitHub kan technische informatie, waaronder IP-adressen, verwerken voor de beveiliging en werking van de hostingdienst. Het aanvraagformulier gebruikt FormSubmit om formulierinzendingen per e-mail aan RafTek door te sturen. Relevante e-mail- en infrastructuurproviders kunnen informatie verwerken voor het afleveren en bewaren van zakelijke correspondentie.",
+      retentionTitle: "Hoe lang wij informatie bewaren",
+      retentionBody: "Informatie uit aanvragen wordt alleen bewaard zolang dit redelijkerwijs nodig is om te reageren, een eventuele zakelijke relatie te beheren, aan toepasselijke wettelijke of administratieve verplichtingen te voldoen of geschillen op te lossen. Informatie die niet langer nodig is, wordt verwijderd of op passende wijze vernietigd.",
       cookiesTitle: "Cookies en analytics",
       cookiesBody: "RafTek gebruikt in deze versie van de website bewust geen advertentiecookies of externe analytics. De formulierprovider kan beveiligings- of anti-spammaatregelen toepassen wanneer een formulier wordt verzonden.",
-      contactTitle: "Privacyvragen",
+      rightsTitle: "Uw rechten",
+      rightsBody: "Afhankelijk van de wet die op u van toepassing is, kunt u rechten hebben op inzage, correctie, verwijdering, beperking, bezwaar, overdraagbaarheid of andere controle over uw persoonsgegevens. U kunt RafTek via contact@raftek.net benaderen met een privacyverzoek. U kunt ook het recht hebben een klacht in te dienen bij de bevoegde privacytoezichthouder.",
+      contactTitle: "Contact",
       contactBody: "Voor privacyvragen kunt u contact opnemen via contact@raftek.net.",
       back: "← Terug naar RafTek"
     },
@@ -393,6 +420,11 @@ const translations = {
       eyebrow: "Aanvraag ontvangen",
       title: "Bedankt voor uw bericht aan RafTek.",
       body: "Uw aanvraag is verzonden. Wij bekijken de informatie en reageren via de contactgegevens die u hebt opgegeven.",
+      back: "Terug naar RafTek"
+    },
+    notFound: {
+      title: "Pagina niet gevonden.",
+      body: "De pagina die u zoekt bestaat niet of is mogelijk verplaatst.",
       back: "Terug naar RafTek"
     }
   },
@@ -407,7 +439,8 @@ const translations = {
       benefits: "Neden ESL",
       capabilities: "Yetenekler",
       consultancy: "IoT Danışmanlığı",
-      contact: "İletişim"
+      contact: "İletişim",
+      menu: "Menü"
     },
     hero: {
       eyebrow: "Elektronik Raf Etiketi Çözümleri & IoT",
@@ -558,9 +591,10 @@ const translations = {
       optionOther: "Diğer",
       message: "Gereksinimlerinizi kısaca anlatın",
       messagePlaceholder: "Mağaza sayısı, yaklaşık etiket adedi, mevcut sistemler, proje amacı veya faydalı olabilecek diğer bilgiler.",
-      consent: "RafTek'in burada gönderdiğim bilgileri bu talebe yanıt vermek amacıyla kullanmasını kabul ediyorum.",
+      consent: "Gizlilik Bildirimini okudum ve RafTek'in burada gönderdiğim bilgileri bu talebe yanıt vermek amacıyla kullanacağını anlıyorum.",
       submit: "Talebi gönder",
-      note: "Bilgileriniz yalnızca talebinize yanıt vermek için kullanılır. Gizlilik Bildirimimize bakın."
+      note: "Bilgileriniz yalnızca talebinize yanıt vermek için kullanılır.",
+      privacyLink: "Gizlilik Bildirimimizi okuyun"
     },
     footer: {
       tagline: "Elektronik Raf Etiketi Çözümleri & IoT Danışmanlığı",
@@ -575,16 +609,24 @@ const translations = {
       eyebrow: "Gizlilik",
       title: "Gizlilik Bildirimi",
       updated: "Son güncelleme: 8 Ağustos 2026",
-      intro: "RafTek, raftek.net sitesini işletir. Bu site RafTek hizmetleri hakkında bilgi sağlar ve potansiyel müşteri ve iş ortaklarının talep göndermesine olanak tanır.",
+      intro: "Bu bildirim, raftek.net üzerinden gönderilen veya ticari bir talep kapsamında doğrudan bize iletilen kişisel bilgilerin RafTek tarafından nasıl ele alındığını açıklar.",
+      controllerTitle: "Bilgilerinizden kim sorumludur?",
+      controllerBody: "RafTek, bu web sitesi üzerinden aldığı ticari bilgilerden sorumludur. Gizlilik ile ilgili talepler contact@raftek.net adresine gönderilebilir.",
       dataTitle: "Aldığımız bilgiler",
-      dataBody: "RafTek'e e-posta gönderdiğinizde veya web sitesi talep formunu kullandığınızda; ad, şirket, e-posta adresi, telefon numarası ve mesaj gibi kendi tercihinizle verdiğiniz bilgileri alırız.",
-      useTitle: "Bilgiler nasıl kullanılır",
-      useBody: "Bilgiler, taleplere yanıt vermek, potansiyel proje ve iş birliklerini görüşmek ve ilgili ticari yazışmaları sürdürmek için kullanılır.",
-      formTitle: "Web sitesi talep formu",
-      formBody: "Web sitesi talep formu, üçüncü taraf form iletim hizmeti olarak FormSubmit'i kullanır. Forma girilen bilgiler, talebin RafTek'e e-posta yoluyla ulaşabilmesi için bu hizmet üzerinden iletilir.",
+      dataBody: "Bilgiler; adınızı, şirketinizi, iş e-posta adresinizi, telefon numaranızı, proje gereksinimlerinizi ve mesajınıza eklemeyi tercih ettiğiniz diğer bilgileri içerebilir.",
+      useTitle: "Bilgileri neden kullanıyoruz?",
+      useBody: "Talep bilgilerini size yanıt vermek, gereksinimlerinizi anlamak, olası hizmet veya iş birliklerini görüşmek, olası bir ticari ilişkiyle bağlantılı adımları atmak ve ilgili ticari yazışmaları sürdürmek için kullanırız. Web sitesi taleplerini uygun bir hukuki dayanak olmadan ilgisiz pazarlama amaçlarıyla kullanmayız.",
+      basisTitle: "İşleme dayanağı",
+      basisBody: "Uygulanabilir veri koruma mevzuatına ve talebinizin bağlamına göre işleme; sizin yaptığınız bir talebe yanıt vermek, sözleşme öncesi adımları atmak veya RafTek'in gerçek ticari talepleri yönetme ve iş ilişkilerini sürdürme konusundaki meşru ticari menfaatleri kapsamında gerekli olabilir.",
+      providersTitle: "Web sitesi ve form hizmet sağlayıcıları",
+      providersBody: "Web sitesi GitHub Pages üzerinden barındırılır. GitHub, barındırma hizmetinin güvenliği ve işletimi için IP adresleri dahil teknik bilgileri işleyebilir. Talep formu, form gönderimlerini e-posta yoluyla RafTek'e iletmek için FormSubmit kullanır. İlgili e-posta ve altyapı sağlayıcıları da ticari yazışmaların iletilmesi ve saklanması için gerekli bilgileri işleyebilir.",
+      retentionTitle: "Bilgileri ne kadar süre saklıyoruz?",
+      retentionBody: "Talep bilgileri yalnızca talebe yanıt vermek, oluşabilecek ticari ilişkiyi yönetmek, uygulanabilir yasal veya kayıt tutma yükümlülüklerini yerine getirmek ya da uyuşmazlıkları çözmek için makul ölçüde gerekli olduğu sürece saklanır. Artık gerekli olmayan bilgiler silinir veya uygun şekilde imha edilir.",
       cookiesTitle: "Çerezler ve analiz",
       cookiesBody: "RafTek, sitenin bu sürümünde bilinçli olarak reklam çerezleri veya üçüncü taraf analiz araçları kullanmaz. Form sağlayıcısı, form gönderildiğinde güvenlik veya spam önleme önlemleri uygulayabilir.",
-      contactTitle: "Gizlilik soruları",
+      rightsTitle: "Haklarınız",
+      rightsBody: "Size uygulanabilir mevzuata bağlı olarak kişisel bilgilerinizle ilgili erişim, düzeltme, silme, işlemenin kısıtlanması, itiraz, veri taşınabilirliği veya diğer haklara sahip olabilirsiniz. Gizlilik talebinde bulunmak için contact@raftek.net adresinden RafTek ile iletişime geçebilirsiniz. Ayrıca ilgili veri koruma otoritesine şikâyette bulunma hakkınız olabilir.",
+      contactTitle: "İletişim",
       contactBody: "Gizlilikle ilgili sorular için contact@raftek.net adresinden bize ulaşabilirsiniz.",
       back: "← RafTek'e dön"
     },
@@ -592,6 +634,11 @@ const translations = {
       eyebrow: "Talep alındı",
       title: "RafTek ile iletişime geçtiğiniz için teşekkür ederiz.",
       body: "Talebiniz gönderildi. Sağladığınız bilgileri inceleyip mesajınızdaki iletişim bilgilerini kullanarak yanıt vereceğiz.",
+      back: "RafTek'e dön"
+    },
+    notFound: {
+      title: "Sayfa bulunamadı.",
+      body: "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
       back: "RafTek'e dön"
     }
   }
@@ -608,17 +655,20 @@ function setLanguage(lang) {
 
   const isPrivacy = Boolean(document.querySelector('[data-i18n="privacy.title"]'));
   const isThanks = Boolean(document.querySelector('[data-i18n="thanks.title"]'));
+  const isNotFound = Boolean(document.querySelector('[data-i18n="notFound.title"]'));
 
   if (isPrivacy) {
     document.title = `${translations[lang].privacy.title} | RafTek`;
   } else if (isThanks) {
     document.title = `${translations[lang].thanks.title} | RafTek`;
+  } else if (isNotFound) {
+    document.title = `${translations[lang].notFound.title} | RafTek`;
   } else {
     document.title = translations[lang].meta.title;
   }
 
   const metaDescription = document.querySelector('meta[name="description"]');
-  if (metaDescription && !isPrivacy && !isThanks) {
+  if (metaDescription && !isPrivacy && !isThanks && !isNotFound) {
     metaDescription.setAttribute("content", translations[lang].meta.description);
   }
 
@@ -649,3 +699,28 @@ setLanguage(localStorage.getItem("raftek-language") || "en");
 
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
+
+
+const menuButton = document.querySelector(".menu-button");
+const primaryNavigation = document.querySelector(".nav-links");
+
+if (menuButton && primaryNavigation) {
+  const closeMenu = () => {
+    primaryNavigation.classList.remove("nav-open");
+    menuButton.setAttribute("aria-expanded", "false");
+  };
+
+  menuButton.addEventListener("click", () => {
+    const willOpen = !primaryNavigation.classList.contains("nav-open");
+    primaryNavigation.classList.toggle("nav-open", willOpen);
+    menuButton.setAttribute("aria-expanded", willOpen ? "true" : "false");
+  });
+
+  primaryNavigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) closeMenu();
+  });
+}

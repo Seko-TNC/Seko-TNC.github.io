@@ -10,6 +10,7 @@
 
   <link rel="canonical" href="https://raftek.net/" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="RafTek | Electronic Shelf Label Solutions & IoT Consultancy" />
@@ -49,7 +50,7 @@
            </a>
       -->
 
-      <nav class="nav-links" aria-label="Primary navigation">
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
         <a href="#solutions" data-i18n="nav.solutions">ESL Solutions</a>
         <a href="#why-esl" data-i18n="nav.benefits">Why ESL</a>
         <a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a>
@@ -62,6 +63,11 @@
         <button type="button" class="lang-button" data-lang="nl" aria-pressed="false">NL</button>
         <button type="button" class="lang-button" data-lang="tr" aria-pressed="false">TR</button>
       </div>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-lines" aria-hidden="true"></span>
+        <span data-i18n="nav.menu">Menu</span>
+      </button>
     </div>
   </header>
 
@@ -82,27 +88,6 @@
       </div>
       <div class="hero-glow glow-one" aria-hidden="true"></div>
       <div class="hero-glow glow-two" aria-hidden="true"></div>
-    </section>
-
-    <section class="proof-bar" aria-label="RafTek focus">
-      <div class="container proof-grid">
-        <div>
-          <strong data-i18n="proof.eslTitle">Electronic Shelf Labels</strong>
-          <span data-i18n="proof.eslBody">Hardware, connectivity and management</span>
-        </div>
-        <div>
-          <strong data-i18n="proof.integrationTitle">Systems Integration</strong>
-          <span data-i18n="proof.integrationBody">POS, ERP, API and middleware connectivity</span>
-        </div>
-        <div>
-          <strong data-i18n="proof.iotTitle">IoT Consultancy</strong>
-          <span data-i18n="proof.iotBody">Connected infrastructure and cloud architecture</span>
-        </div>
-        <div>
-          <strong data-i18n="proof.regionsTitle">International Coverage</strong>
-          <span data-i18n="proof.regionsBody">UK, European Union and Turkey</span>
-        </div>
-      </div>
     </section>
 
     <section class="section" id="about">
@@ -404,6 +389,7 @@
           <input type="hidden" name="_subject" value="New RafTek website enquiry">
           <input type="hidden" name="_next" value="https://raftek.net/thanks.html">
           <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_url" value="https://raftek.net/">
           <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
 
           <div class="form-row two">
@@ -449,11 +435,14 @@
 
           <label class="consent">
             <input type="checkbox" required name="Privacy acknowledgement" value="Accepted">
-            <span data-i18n="form.consent">I agree that RafTek may use the information submitted here to respond to this enquiry.</span>
+            <span data-i18n="form.consent">I have read the Privacy Notice and understand that RafTek will use the information submitted here to respond to this enquiry.</span>
           </label>
 
           <button class="button form-button" type="submit" data-i18n="form.submit">Send enquiry</button>
-          <p class="form-note" data-i18n="form.note">Your details are used only to respond to your enquiry. See our Privacy Notice.</p>
+          <p class="form-note">
+            <span data-i18n="form.note">Your details are used only to respond to your enquiry.</span>
+            <a href="privacy.html" data-i18n="form.privacyLink">Read our Privacy Notice</a>.
+          </p>
         </form>
       </div>
     </section>
