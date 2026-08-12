@@ -9,6 +9,7 @@
   <meta name="theme-color" content="#07111f" />
 
   <link rel="canonical" href="https://raftek.net/" />
+  <link rel="preload" as="image" href="assets/raftek-esl-brand.png" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
@@ -16,6 +17,8 @@
   <meta property="og:title" content="RafTek | Electronic Shelf Label Solutions & IoT Consultancy" />
   <meta property="og:description" content="ESL solutions, IoT consultancy and systems integration across the UK, EU and Turkey." />
   <meta property="og:url" content="https://raftek.net/" />
+  <meta property="og:image" content="https://raftek.net/assets/raftek-esl-brand.png" />
+  <meta property="og:image:alt" content="RafTek electronic shelf label" />
 
   <script type="application/ld+json">
   {
@@ -74,18 +77,38 @@
   <main id="main-content">
 
     <section class="hero" id="top">
-      <div class="container hero-content">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Electronic Shelf Label Solutions & IoT</p>
-        <h1 data-i18n="hero.title">Smarter shelf-edge technology for modern retail.</h1>
-        <p class="hero-text" data-i18n="hero.body">
-          RafTek provides electronic shelf label solutions, systems integration and IoT expertise that help retailers modernise pricing and connected store operations.
-        </p>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Electronic Shelf Label Solutions & IoT</p>
+          <h1 data-i18n="hero.title">Smarter shelf-edge technology for modern retail.</h1>
+          <p class="hero-text" data-i18n="hero.body">
+            RafTek provides electronic shelf label solutions, systems integration and IoT expertise that help retailers modernise pricing and connected store operations.
+          </p>
 
-        <div class="hero-actions">
-          <a class="button primary" href="#solutions" data-i18n="hero.ctaPrimary">Explore ESL Solutions</a>
-          <a class="button secondary" href="#contact" data-i18n="hero.ctaSecondary">Talk to RafTek</a>
+          <div class="hero-actions">
+            <a class="button primary" href="#solutions" data-i18n="hero.ctaPrimary">Explore ESL Solutions</a>
+            <a class="button secondary" href="#contact" data-i18n="hero.ctaSecondary">Talk to RafTek</a>
+          </div>
+        </div>
+
+        <div class="hero-product">
+          <div class="hero-product-orbit" aria-hidden="true"></div>
+          <img
+            src="assets/raftek-esl-brand.png"
+            alt="RafTek-branded electronic shelf label"
+            data-i18n-alt="hero.imageAlt"
+            width="989"
+            height="519"
+            fetchpriority="high"
+            decoding="async"
+          />
+          <div class="hero-product-caption">
+            <span class="product-live-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.imageCaption">Electronic Shelf Label solution</span>
+          </div>
         </div>
       </div>
+
       <div class="hero-glow glow-one" aria-hidden="true"></div>
       <div class="hero-glow glow-two" aria-hidden="true"></div>
     </section>
@@ -149,6 +172,102 @@
               Requirements assessment, technical configuration, rollout planning and ongoing operational support for single-site and multi-site estates.
             </p>
           </article>
+        </div>
+
+        <div class="showcase-divider"></div>
+
+        <div class="showcase-heading">
+          <div>
+            <p class="eyebrow" data-i18n="showcase.eyebrow">ESL Display Examples</p>
+            <h2 data-i18n="showcase.title">One technology, adapted to local retail.</h2>
+          </div>
+          <p data-i18n="showcase.body">
+            Electronic shelf labels can present localised pricing, promotions and product information across different currencies, languages and retail formats.
+          </p>
+        </div>
+
+        <div class="showcase-grid">
+          <figure class="showcase-card">
+            <div class="showcase-image-wrap">
+              <img
+                src="assets/esl-netherlands.png"
+                alt="Electronic shelf label showing Dutch promotional pricing"
+                data-i18n-alt="showcase.nlAlt"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption>
+              <strong data-i18n="showcase.nlTitle">Netherlands</strong>
+              <span data-i18n="showcase.nlBody">Promotional pricing in euros</span>
+            </figcaption>
+          </figure>
+
+          <figure class="showcase-card">
+            <div class="showcase-image-wrap">
+              <img
+                src="assets/esl-uk.png"
+                alt="Electronic shelf label showing UK promotional pricing"
+                data-i18n-alt="showcase.ukAlt"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption>
+              <strong data-i18n="showcase.ukTitle">United Kingdom</strong>
+              <span data-i18n="showcase.ukBody">Promotional pricing in pounds</span>
+            </figcaption>
+          </figure>
+
+          <figure class="showcase-card">
+            <div class="showcase-image-wrap">
+              <img
+                src="assets/esl-turkey-promo.png"
+                alt="Electronic shelf label showing Turkish promotional pricing"
+                data-i18n-alt="showcase.trAlt"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption>
+              <strong data-i18n="showcase.trTitle">Turkey</strong>
+              <span data-i18n="showcase.trBody">Promotional pricing in Turkish lira</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="layout-examples">
+          <div class="layout-examples-copy">
+            <p class="mini-label" data-i18n="showcase.flexLabel">FLEXIBLE PRESENTATION</p>
+            <h3 data-i18n="showcase.flexTitle">Pricing, promotions and product information in one clear format.</h3>
+            <p data-i18n="showcase.flexBody">
+              ESL templates can support standard pricing, promotional messaging, unit pricing and multi-buy offers while keeping the shelf edge consistent and readable.
+            </p>
+          </div>
+
+          <div class="layout-example-images">
+            <div class="layout-example">
+              <img
+                src="assets/esl-turkey-standard.png"
+                alt="Electronic shelf label showing standard Turkish pricing"
+                data-i18n-alt="showcase.standardAlt"
+                loading="lazy"
+                decoding="async"
+              />
+              <span data-i18n="showcase.standardCaption">Standard pricing</span>
+            </div>
+
+            <div class="layout-example">
+              <img
+                src="assets/esl-turkey-multibuy.png"
+                alt="Electronic shelf label showing a Turkish multi-buy offer"
+                data-i18n-alt="showcase.multibuyAlt"
+                loading="lazy"
+                decoding="async"
+              />
+              <span data-i18n="showcase.multibuyCaption">Promotional & multi-buy messaging</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

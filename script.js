@@ -17,7 +17,9 @@ const translations = {
       title: "Smarter shelf-edge technology for modern retail.",
       body: "RafTek provides electronic shelf label solutions, systems integration and IoT expertise that help retailers modernise pricing and connected store operations.",
       ctaPrimary: "Explore ESL Solutions",
-      ctaSecondary: "Talk to RafTek"
+      ctaSecondary: "Talk to RafTek",
+      imageAlt: "RafTek-branded electronic shelf label",
+      imageCaption: "Electronic Shelf Label solution"
     },
     proof: {
       eslTitle: "Electronic Shelf Labels",
@@ -47,6 +49,27 @@ const translations = {
       manageBody: "Product, pricing and label-management workflows connected to POS, ERP, API, middleware or file-based business processes.",
       deployTitle: "Deployment & Support",
       deployBody: "Requirements assessment, technical configuration, rollout planning and ongoing operational support for single-site and multi-site estates."
+    },
+    showcase: {
+      eyebrow: "ESL Display Examples",
+      title: "One technology, adapted to local retail.",
+      body: "Electronic shelf labels can present localised pricing, promotions and product information across different currencies, languages and retail formats.",
+      nlTitle: "Netherlands",
+      nlBody: "Promotional pricing in euros",
+      nlAlt: "Electronic shelf label showing Dutch promotional pricing",
+      ukTitle: "United Kingdom",
+      ukBody: "Promotional pricing in pounds",
+      ukAlt: "Electronic shelf label showing UK promotional pricing",
+      trTitle: "Turkey",
+      trBody: "Promotional pricing in Turkish lira",
+      trAlt: "Electronic shelf label showing Turkish promotional pricing",
+      flexLabel: "FLEXIBLE PRESENTATION",
+      flexTitle: "Pricing, promotions and product information in one clear format.",
+      flexBody: "ESL templates can support standard pricing, promotional messaging, unit pricing and multi-buy offers while keeping the shelf edge consistent and readable.",
+      standardCaption: "Standard pricing",
+      standardAlt: "Electronic shelf label showing standard Turkish pricing",
+      multibuyCaption: "Promotional & multi-buy messaging",
+      multibuyAlt: "Electronic shelf label showing a Turkish multi-buy offer"
     },
     benefits: {
       eyebrow: "Why ESL",
@@ -232,7 +255,9 @@ const translations = {
       title: "Slimmere schaptechnologie voor moderne retail.",
       body: "RafTek levert Electronic Shelf Label-oplossingen, systeemintegratie en IoT-expertise waarmee retailers prijsbeheer en verbonden winkelprocessen moderniseren.",
       ctaPrimary: "Bekijk ESL-oplossingen",
-      ctaSecondary: "Praat met RafTek"
+      ctaSecondary: "Praat met RafTek",
+      imageAlt: "Electronic Shelf Label met RafTek-branding",
+      imageCaption: "Electronic Shelf Label-oplossing"
     },
     proof: {
       eslTitle: "Electronic Shelf Labels",
@@ -262,6 +287,27 @@ const translations = {
       manageBody: "Product-, prijs- en labelbeheerworkflows gekoppeld aan POS, ERP, API, middleware of bestandsgebaseerde processen.",
       deployTitle: "Implementatie & ondersteuning",
       deployBody: "Inventarisatie, technische configuratie, uitrolplanning en operationele ondersteuning voor één of meerdere locaties."
+    },
+    showcase: {
+      eyebrow: "ESL-voorbeelden",
+      title: "Eén technologie, aangepast aan lokale retail.",
+      body: "Electronic Shelf Labels kunnen lokale prijzen, promoties en productinformatie tonen in verschillende valuta, talen en winkelformaten.",
+      nlTitle: "Nederland",
+      nlBody: "Promotieprijs in euro's",
+      nlAlt: "Electronic Shelf Label met Nederlandse promotieprijs",
+      ukTitle: "Verenigd Koninkrijk",
+      ukBody: "Promotieprijs in Britse ponden",
+      ukAlt: "Electronic Shelf Label met Britse promotieprijs",
+      trTitle: "Turkije",
+      trBody: "Promotieprijs in Turkse lira",
+      trAlt: "Electronic Shelf Label met Turkse promotieprijs",
+      flexLabel: "FLEXIBELE PRESENTATIE",
+      flexTitle: "Prijzen, promoties en productinformatie in één helder formaat.",
+      flexBody: "ESL-templates kunnen standaardprijzen, promotieboodschappen, eenheidsprijzen en multibuy-aanbiedingen ondersteunen met een consistente en leesbare presentatie aan het schap.",
+      standardCaption: "Standaardprijs",
+      standardAlt: "Electronic Shelf Label met standaard Turkse prijs",
+      multibuyCaption: "Promotie- en multibuy-boodschap",
+      multibuyAlt: "Electronic Shelf Label met Turkse multibuy-aanbieding"
     },
     benefits: {
       eyebrow: "Waarom ESL",
@@ -447,7 +493,9 @@ const translations = {
       title: "Modern perakende için daha akıllı raf teknolojisi.",
       body: "RafTek, perakendecilerin fiyat yönetimini ve bağlantılı mağaza operasyonlarını modernleştirmesine yardımcı olan elektronik raf etiketi çözümleri, sistem entegrasyonu ve IoT uzmanlığı sunar.",
       ctaPrimary: "ESL Çözümlerini İncele",
-      ctaSecondary: "RafTek ile Görüşün"
+      ctaSecondary: "RafTek ile Görüşün",
+      imageAlt: "RafTek markalı elektronik raf etiketi",
+      imageCaption: "Elektronik Raf Etiketi çözümü"
     },
     proof: {
       eslTitle: "Elektronik Raf Etiketleri",
@@ -477,6 +525,27 @@ const translations = {
       manageBody: "POS, ERP, API, middleware veya dosya tabanlı iş süreçlerine bağlı ürün, fiyat ve etiket yönetim iş akışları.",
       deployTitle: "Kurulum & Destek",
       deployBody: "Tek veya çok lokasyonlu yapılar için gereksinim analizi, teknik yapılandırma, yayılım planlaması ve operasyonel destek."
+    },
+    showcase: {
+      eyebrow: "ESL Ekran Örnekleri",
+      title: "Tek teknoloji, yerel perakendeye uyarlanmış.",
+      body: "Elektronik raf etiketleri farklı para birimleri, diller ve perakende formatlarında yerelleştirilmiş fiyat, kampanya ve ürün bilgilerini gösterebilir.",
+      nlTitle: "Hollanda",
+      nlBody: "Euro cinsinden kampanyalı fiyat",
+      nlAlt: "Hollanda kampanya fiyatını gösteren elektronik raf etiketi",
+      ukTitle: "Birleşik Krallık",
+      ukBody: "Sterlin cinsinden kampanyalı fiyat",
+      ukAlt: "Birleşik Krallık kampanya fiyatını gösteren elektronik raf etiketi",
+      trTitle: "Türkiye",
+      trBody: "Türk lirası cinsinden kampanyalı fiyat",
+      trAlt: "Türkiye kampanya fiyatını gösteren elektronik raf etiketi",
+      flexLabel: "ESNEK SUNUM",
+      flexTitle: "Fiyat, kampanya ve ürün bilgileri tek ve anlaşılır bir formatta.",
+      flexBody: "ESL şablonları standart fiyatlandırma, kampanya mesajları, birim fiyat ve çoklu alım tekliflerini desteklerken raf görünümünü tutarlı ve okunaklı tutabilir.",
+      standardCaption: "Standart fiyatlandırma",
+      standardAlt: "Standart Türkiye fiyatını gösteren elektronik raf etiketi",
+      multibuyCaption: "Kampanya ve çoklu alım mesajı",
+      multibuyAlt: "Türkiye çoklu alım teklifini gösteren elektronik raf etiketi"
     },
     benefits: {
       eyebrow: "Neden ESL",
@@ -680,6 +749,11 @@ function setLanguage(lang) {
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
     const value = getByPath(translations[lang], element.dataset.i18nPlaceholder);
     if (typeof value === "string") element.setAttribute("placeholder", value);
+  });
+
+  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+    const value = getByPath(translations[lang], element.dataset.i18nAlt);
+    if (typeof value === "string") element.setAttribute("alt", value);
   });
 
   document.querySelectorAll(".lang-button").forEach((button) => {
