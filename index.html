@@ -1,32 +1,856 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RafTek</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f5f5f5;
-      color: #222;
-      text-align: center;
-    }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1729">
+  <title>Electronic shelf labels for retailers | RafTek</title>
+  <meta name="description" content="See how electronic shelf labels update prices wirelessly, request a live RafTek demo and explore a trial in one section of your store.">
+  <link rel="canonical" href="https://raftek.net/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Electronic shelf labels for retailers | RafTek">
+  <meta property="og:description" content="See how electronic shelf labels update prices wirelessly, request a live RafTek demo and explore a trial in one section of your store.">
+  <meta property="og:url" content="https://raftek.net/">
+  <meta property="og:image" content="https://raftek.net/assets/raftek-esl-brand.png">
+  <meta property="og:image:alt" content="RafTek electronic shelf label with a digital price display">
+  <script>
+    (() => {
+      const titles = {
+        "en": "Electronic shelf labels for retailers | RafTek",
+        "nl": "Elektronische schaplabels voor winkels | RafTek",
+        "tr": "Perakende için elektronik raf etiketleri | RafTek"
+      };
+      const descriptions = {
+        "en": "See how electronic shelf labels update prices wirelessly, request a live RafTek demo and explore a trial in one section of your store.",
+        "nl": "Ontdek hoe u schapprijzen draadloos bijwerkt, vraag een live demo aan en bespreek een proef in één afdeling van uw winkel.",
+        "tr": "Raf fiyatlarının kablosuz olarak nasıl güncellendiğini öğrenin, canlı demo talep edin ve mağazanızın bir bölümünde pilot uygulamayı görüşün."
+      };
+      const params = new URLSearchParams(window.location.search);
+      const requested = params.get("lang");
+      const language = requested === "nl" || requested === "tr" ? requested : "en";
+      const page = document.documentElement;
 
-    main {
-      padding: 30px;
+      page.dataset.language = language;
+      page.lang = language;
+      document.title = titles[language];
+      document.querySelector('meta[name="description"]').content = descriptions[language];
+
+      if (params.get("sent") === "1") {
+        page.dataset.demoSent = "";
+      }
+    })();
+  </script>
+  <style>
+  :root {
+    color-scheme: light;
+    --navy: #0a1729;
+    --ink: #132237;
+    --muted: #43536a;
+    --accent: #1559bc;
+    --accent-hover: #104895;
+    --line: #ccd6e4;
+    --panel: #f1f5fa;
+    --page: #fff;
+    --radius: 0.8rem;
+    --space: clamp(3rem, 7vw, 6rem);
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font: 1rem/1.6 system-ui, sans-serif;
+  }
+
+  html {
+    scroll-padding-top: 1rem;
+  }
+
+  a {
+    color: var(--accent);
+    text-underline-offset: 0.17em;
+  }
+
+  :focus-visible {
+    outline: 3px solid #bd4b04;
+    outline-offset: 4px;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin: 0 0 0.65em;
+    line-height: 1.12;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+  }
+
+  h1 {
+    max-width: 18ch;
+    font-size: clamp(2.5rem, 5.6vw, 4.75rem);
+    letter-spacing: -0.05em;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 4vw, 2.8rem);
+    letter-spacing: -0.035em;
+  }
+
+  h3 {
+    font-size: 1.22rem;
+    letter-spacing: -0.015em;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  img {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+
+  .wrap {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+  }
+
+  .skip {
+    position: absolute;
+    inset: 0 auto auto 1rem;
+    z-index: 2;
+    padding: 0.6rem 1rem;
+    transform: translateY(-150%);
+    background: var(--page);
+  }
+
+  .skip:focus {
+    transform: translateY(0.5rem);
+  }
+
+  .site-header {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .header-inner,
+  .site-nav,
+  .languages,
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55rem 0.9rem;
+  }
+
+  .header-inner {
+    justify-content: space-between;
+    padding-block: 0.65rem;
+  }
+
+  .brand {
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.055em;
+    text-decoration: none;
+  }
+
+  .site-nav a,
+  .languages a {
+    display: inline-flex;
+    align-items: center;
+    min-block-size: 2.75rem;
+    padding-inline: 0.15rem;
+    font-size: 0.93rem;
+    text-decoration-thickness: 0.08em;
+  }
+
+  .site-nav a {
+    color: var(--ink);
+  }
+
+  .languages [aria-current="page"] {
+    color: var(--ink);
+    font-weight: 700;
+    text-decoration-thickness: 0.15em;
+  }
+
+  .hero {
+    padding-block: var(--space);
+    background: radial-gradient(ellipse at 85% 10%, #19365d 0, var(--navy) 62%);
+    color: #fff;
+  }
+
+  .hero p {
+    color: #dce7f6;
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    max-width: 52ch;
+  }
+
+  .hero img {
+    width: 100%;
+    border-radius: var(--radius);
+  }
+
+  .actions {
+    margin-top: 1.5rem;
+  }
+
+  .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-block-size: 2.75rem;
+    padding: 0.58rem 1.1rem;
+    border: 1px solid transparent;
+    border-radius: 0.42rem;
+    background: var(--accent);
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background: var(--accent-hover);
+  }
+
+  .button.secondary {
+    border-color: currentColor;
+    background: transparent;
+    color: var(--accent);
+  }
+
+  .button.secondary:hover {
+    background: #e7eef9;
+  }
+
+  .hero .button {
+    background: #fff;
+    color: var(--navy);
+  }
+
+  .hero .button:hover {
+    background: #dce7f6;
+  }
+
+  .hero .button.secondary {
+    background: transparent;
+    color: #fff;
+  }
+
+  .hero .button.secondary:hover {
+    background: #253b59;
+  }
+
+  .hero :focus-visible {
+    outline-color: #ffc684;
+  }
+
+  .section {
+    padding-block: var(--space);
+  }
+
+  .surface {
+    background: var(--panel);
+  }
+
+  .grid,
+  .split {
+    display: grid;
+    gap: clamp(1rem, 3vw, 2rem);
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .split {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  .hero .split {
+    align-items: center;
+  }
+
+  .card {
+    padding: clamp(1.1rem, 3vw, 1.65rem);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--page);
+  }
+
+  .card > :last-child {
+    margin-bottom: 0;
+  }
+
+  .reading {
+    max-width: 58rem;
+  }
+
+  .steps,
+  .pilot-list {
+    padding-inline-start: 1.35rem;
+  }
+
+  .steps li,
+  .pilot-list li {
+    padding-inline-start: 0.35rem;
+  }
+
+  .steps li::marker,
+  .pilot-list li::marker {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .steps li + li,
+  .pilot-list li + li {
+    margin-top: 0.7rem;
+  }
+
+  .steps li p {
+    margin: 0.25rem 0 0;
+  }
+
+  .product-example {
+    margin: 0;
+    padding: clamp(0.9rem, 3vw, 1.5rem);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+  }
+
+  .product-example img {
+    max-block-size: 24rem;
+    margin-inline: auto;
+    object-fit: contain;
+    border-radius: 0.45rem;
+  }
+
+  .product-example figcaption {
+    margin-top: 0.8rem;
+    color: var(--muted);
+  }
+
+  details {
+    padding: 0.8rem 0;
+    border-top: 1px solid var(--line);
+  }
+
+  summary {
+    min-block-size: 2.75rem;
+    padding-block: 0.45rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  summary + p,
+  summary + div {
+    margin-top: 0.4rem;
+  }
+
+  .form {
+    display: grid;
+    gap: 0.45rem;
+    align-content: start;
+  }
+
+  .form .button {
+    justify-self: start;
+    margin-top: 0.55rem;
+  }
+
+  .field {
+    margin-top: 0.5rem;
+    font-weight: 650;
+  }
+
+  .form input:not([type="hidden"]),
+  .form textarea {
+    display: block;
+    width: 100%;
+    min-block-size: 2.75rem;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #77869b;
+    border-radius: 0.4rem;
+    background: var(--page);
+    color: var(--ink);
+    font: inherit;
+  }
+
+  .form textarea {
+    resize: vertical;
+  }
+
+  .note {
+    margin: 0.65rem 0 0;
+  }
+
+  .note {
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+
+  .site-footer {
+    padding-block: 1.6rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+  }
+
+  .site-footer a {
+    overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 51rem) {
+    .site-nav {
+      flex-basis: 100%;
     }
+  }
+
+  @media (max-width: 42rem) {
+    .grid,
+    .split {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .locale {
+    display: none;
+  }
+
+  html:not([data-language]) [data-page="en"],
+  html[data-language="en"] [data-page="en"],
+  html[data-language="nl"] [data-page="nl"],
+  html[data-language="tr"] [data-page="tr"] {
+    display: block;
+  }
+
+  .confirmation {
+    display: none;
+    margin-block: 1.25rem;
+    padding: 1rem;
+    border-inline-start: 0.3rem solid var(--accent);
+    border-radius: 0.35rem;
+    background: var(--panel);
+  }
+
+  html[data-demo-sent] .confirmation {
+    display: block;
+  }
+
+  .confirmation p {
+    margin: 0;
+  }
   </style>
 </head>
 <body>
-  <main>
-    <h1>RafTek</h1>
-    <p>Our website is currently being updated.</p>
-    <p>We’ll be back online soon.</p>
+<div class="locale" lang="en" data-page="en">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="?lang=en">RafTek</a>
+      <nav class="languages" aria-label="Choose language">
+        <a href="?lang=en" lang="en" hreflang="en" aria-current="page">English</a>
+        <a href="?lang=nl" lang="nl" hreflang="nl">Nederlands</a>
+        <a href="?lang=tr" lang="tr" hreflang="tr">Türkçe</a>
+      </nav>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#how">How it works</a>
+        <a href="#benefits">Store benefits</a>
+        <a href="#pilot">Pilot</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap split">
+        <div>
+          <h1 id="hero-heading">Update shelf prices without replacing paper labels</h1>
+          <p>Electronic shelf labels are small screens that display prices beside your products. RafTek sends new prices wirelessly to the right labels. In a live demo, you can watch a price change on a real shelf label.</p>
+          <div class="actions">
+            <a class="button" href="#contact">Request a live demo</a>
+            <a class="button secondary" href="#how">How it works</a>
+          </div>
+        </div>
+        <img src="./assets/raftek-esl-brand.png" alt="RafTek electronic shelf label with a digital price display"
+             width="989" height="519" fetchpriority="high" decoding="async">
+      </div>
+    </section>
+
+    <section id="how" class="section" aria-labelledby="how-heading">
+      <div class="wrap split">
+        <div>
+          <h2 id="how-heading">How a new price reaches the shelf</h2>
+          <p>Imagine putting a snack on promotion. Here’s what happens to its shelf price.</p>
+          <ol class="steps">
+            <li><strong>Change the price</strong><p>Update the price in your store software if it’s connected, or share a price file using the method we agree with you.</p></li>
+            <li><strong>Send the update</strong><p>RafTek sends the price wirelessly to the shelf label linked to that product.</p></li>
+            <li><strong>See it on the shelf</strong><p>The label displays the new price. In a trial, we can compare it with the price at the till.</p></li>
+          </ol>
+        </div>
+        <figure class="product-example">
+          <img src="./assets/esl-uk.png" alt="Digital shelf label with a product price in pounds" loading="lazy" decoding="async">
+          <figcaption>Example shelf label showing a price in pounds.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="benefits" class="section surface" aria-labelledby="benefits-heading">
+      <div class="wrap">
+        <h2 id="benefits-heading">Store benefits</h2>
+        <div class="grid">
+          <div class="card"><h3>Spend less time changing labels</h3><p>When prices change, staff have fewer paper tags to print and replace.</p></div>
+          <div class="card"><h3>Update promotions in one place</h3><p>Send changes to the labels for the products included in your promotion.</p></div>
+          <div class="card"><h3>Reduce the chance of price mismatches</h3><p>Using the same price source can help keep shelf and till prices in line.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pilot" class="section" aria-labelledby="pilot-heading">
+      <div class="wrap reading">
+        <h2 id="pilot-heading">Try it in one part of your store</h2>
+        <p>We’ll show you a live price change. If you’d like to try it in your store, we can start with one section, such as snacks.</p>
+        <ul class="pilot-list">
+          <li>Agree on the products and price changes you want to test.</li>
+          <li>Check how your price data can reach the labels and test updates in the store.</li>
+          <li>Review how reliably updates reach the shelf, whether prices match the till and how easily staff can use the system.</li>
+        </ul>
+        <div class="actions"><a class="button" href="#contact">Request a live demo</a></div>
+      </div>
+    </section>
+
+    <section id="faq" class="section surface" aria-labelledby="faq-heading">
+      <div class="wrap reading">
+        <h2 id="faq-heading">Common questions</h2>
+        <details><summary>Can I keep using my current till or store software?</summary><p>We check what product and price data your system can share. With Mikro, the connection depends on the version and the access you or your software provider can give. A spreadsheet or other file may be an option.</p></details>
+        <details><summary>What does a trial cost?</summary><p>It depends on how many labels you need, how prices are sent and what on-site setup is needed. We can discuss the scope before you decide whether to start.</p></details>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="wrap split">
+        <div>
+          <h2 id="contact-heading">Request a live demo</h2>
+          <p>We’ll email you to agree a time. During the demo, you can see a live price update and ask how the labels could work in your store.</p>
+          <div class="confirmation">
+            <h3>Thanks for requesting a live demo</h3>
+            <p>We’ll email you to agree a time.</p>
+          </div>
+          <p>Prefer to email us? <a href="mailto:contact@raftek.net">contact@raftek.net</a></p>
+        </div>
+        <form class="form card" action="https://formsubmit.co/contact@raftek.net" method="post">
+          <input type="hidden" name="_subject" value="RafTek EN — Live demo request">
+          <input type="hidden" name="_next" value="https://raftek.net/?lang=en&amp;sent=1#contact">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="Page language" value="en">
+          <div hidden><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+
+          <label class="field" for="name">Name</label>
+          <input id="name" name="Name" autocomplete="name" maxlength="120" required>
+
+          <label class="field" for="company">Store or company</label>
+          <input id="company" name="Company" autocomplete="organization" maxlength="160" required>
+
+          <label class="field" for="email">Work email</label>
+          <input id="email" type="email" name="email" autocomplete="email" maxlength="254" required>
+
+          <label class="field" for="message">What would you like to see? (optional)</label>
+          <textarea id="message" name="Message" rows="4" maxlength="1500"></textarea>
+
+          <p class="note">We use these details to respond to your request. <a href="./privacy.html">Privacy notice</a></p>
+          <button class="button" type="submit">Send demo request</button>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <strong>RafTek</strong>
+      <a href="./privacy.html">Privacy notice</a>
+    </div>
+  </footer>
+</div>
+
+<div class="locale" lang="nl" data-page="nl">
+  <a class="skip" href="#nl-main">Direct naar de inhoud</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="?lang=nl">RafTek</a>
+      <nav class="languages" aria-label="Taal kiezen">
+        <a href="?lang=en" lang="en" hreflang="en">English</a>
+        <a href="?lang=nl" lang="nl" hreflang="nl" aria-current="page">Nederlands</a>
+        <a href="?lang=tr" lang="tr" hreflang="tr">Türkçe</a>
+      </nav>
+      <nav class="site-nav" aria-label="Hoofdnavigatie">
+        <a href="#nl-how">Zo werkt het</a>
+        <a href="#nl-benefits">Voordelen voor uw winkel</a>
+        <a href="#nl-pilot">Proef in uw winkel</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="nl-main" tabindex="-1">
+    <section class="hero" aria-labelledby="nl-hero-heading">
+      <div class="wrap split">
+        <div>
+          <h1 id="nl-hero-heading">Pas schapprijzen aan zonder papieren labels te vervangen</h1>
+          <p>Elektronische schaplabels zijn kleine schermpjes die de prijs bij uw producten tonen. RafTek stuurt nieuwe prijzen draadloos naar de juiste labels. Tijdens een live demo ziet u een prijs op een echt schaplabel veranderen.</p>
+          <div class="actions">
+            <a class="button" href="#nl-contact">Vraag een live demo aan</a>
+            <a class="button secondary" href="#nl-how">Zo werkt het</a>
+          </div>
+        </div>
+        <img src="./assets/raftek-esl-brand.png" alt="Elektronisch schaplabel van RafTek met een digitale prijsweergave"
+             width="989" height="519" fetchpriority="high" decoding="async">
+      </div>
+    </section>
+
+    <section id="nl-how" class="section" aria-labelledby="nl-how-heading">
+      <div class="wrap split">
+        <div>
+          <h2 id="nl-how-heading">Van prijswijziging tot schap</h2>
+          <p>Stel dat u een snack in de aanbieding doet. Zo komt de actieprijs op het schaplabel.</p>
+          <ol class="steps">
+            <li><strong>Pas de prijs aan</strong><p>Wijzig de prijs in uw winkelsoftware als die is gekoppeld, of lever een prijsbestand aan volgens de afgesproken werkwijze.</p></li>
+            <li><strong>Verstuur de nieuwe prijs</strong><p>RafTek stuurt de prijs draadloos naar het schaplabel dat bij het product hoort.</p></li>
+            <li><strong>Bekijk de prijs op het schap</strong><p>De nieuwe prijs verschijnt op het schaplabel. Tijdens een proef kunnen we die met de kassaprijs vergelijken.</p></li>
+          </ol>
+        </div>
+        <figure class="product-example">
+          <img src="./assets/esl-netherlands.png" alt="Digitaal schaplabel met een productprijs in euro’s" loading="lazy" decoding="async">
+          <figcaption>Voorbeeld van een schaplabel met een prijs in euro’s.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="nl-benefits" class="section surface" aria-labelledby="nl-benefits-heading">
+      <div class="wrap">
+        <h2 id="nl-benefits-heading">Voordelen voor uw winkel</h2>
+        <div class="grid">
+          <div class="card"><h3>Minder tijd kwijt aan labels</h3><p>Bij prijswijzigingen hoeft uw team minder papieren labels te printen en te vervangen.</p></div>
+          <div class="card"><h3>Acties makkelijker aanpassen</h3><p>Stuur nieuwe prijzen vanuit één plek naar de labels van de producten die meedoen aan de actie.</p></div>
+          <div class="card"><h3>Minder kans op prijsverschillen</h3><p>Eén prijsbron kan helpen om schap- en kassaprijzen gelijk te houden.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nl-pilot" class="section" aria-labelledby="nl-pilot-heading">
+      <div class="wrap reading">
+        <h2 id="nl-pilot-heading">Probeer het in één afdeling</h2>
+        <p>We laten u een prijswijziging live zien. Wilt u het in uw winkel proberen, dan kunnen we beginnen met één afdeling, bijvoorbeeld het schap met snacks.</p>
+        <ul class="pilot-list">
+          <li>Spreek af welke producten en prijswijzigingen u wilt testen.</li>
+          <li>Bekijk hoe uw prijsgegevens de labels kunnen bereiken en test de updates in de winkel.</li>
+          <li>Beoordeel samen of de updates betrouwbaar aankomen, of de prijzen overeenkomen met de kassaprijzen en hoe uw team ermee werkt.</li>
+        </ul>
+        <div class="actions"><a class="button" href="#nl-contact">Vraag een live demo aan</a></div>
+      </div>
+    </section>
+
+    <section id="nl-faq" class="section surface" aria-labelledby="nl-faq-heading">
+      <div class="wrap reading">
+        <h2 id="nl-faq-heading">Veelgestelde vragen</h2>
+        <details><summary>Kan ik mijn huidige kassa- of winkelsoftware blijven gebruiken?</summary><p>We controleren welke product- en prijsgegevens uw systeem kan delen. Bij Mikro hangt de koppeling af van de versie en de toegang die u of uw softwareleverancier kan geven. Soms is een spreadsheet of ander bestand een optie.</p></details>
+        <details><summary>Wat kost een proef?</summary><p>Dat hangt af van het aantal labels, hoe de prijsgegevens worden aangeleverd en wat er op locatie nodig is. We bespreken de omvang voordat u beslist of u wilt beginnen.</p></details>
+      </div>
+    </section>
+
+    <section id="nl-contact" class="section" aria-labelledby="nl-contact-heading">
+      <div class="wrap split">
+        <div>
+          <h2 id="nl-contact-heading">Vraag een live demo aan</h2>
+          <p>We mailen u om een tijd af te spreken. Tijdens de demo ziet u een prijs live veranderen en kunt u vragen stellen over uw winkel.</p>
+          <div class="confirmation">
+            <h3>Bedankt voor uw demoaanvraag</h3>
+            <p>U krijgt van ons een e-mail om een tijd af te spreken.</p>
+          </div>
+          <p>Mailt u ons liever rechtstreeks? <a href="mailto:contact@raftek.net">contact@raftek.net</a></p>
+        </div>
+        <form class="form card" action="https://formsubmit.co/contact@raftek.net" method="post">
+          <input type="hidden" name="_subject" value="RafTek NL — Aanvraag voor een live demo">
+          <input type="hidden" name="_next" value="https://raftek.net/?lang=nl&amp;sent=1#nl-contact">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="Page language" value="nl">
+          <div hidden><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+
+          <label class="field" for="nl-name">Naam</label>
+          <input id="nl-name" name="Name" autocomplete="name" maxlength="120" required>
+
+          <label class="field" for="nl-company">Winkel of bedrijf</label>
+          <input id="nl-company" name="Company" autocomplete="organization" maxlength="160" required>
+
+          <label class="field" for="nl-email">Zakelijk e-mailadres</label>
+          <input id="nl-email" type="email" name="email" autocomplete="email" maxlength="254" required>
+
+          <label class="field" for="nl-message">Wat wilt u zien? (optioneel)</label>
+          <textarea id="nl-message" name="Message" rows="4" maxlength="1500"></textarea>
+
+          <p class="note">We gebruiken deze gegevens om uw aanvraag te beantwoorden. <a href="./privacy.html">Privacyverklaring</a></p>
+          <button class="button" type="submit">Verstuur uw demoaanvraag</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <strong>RafTek</strong>
+      <a href="./privacy.html">Privacyverklaring</a>
+    </div>
+  </footer>
+</div>
+
+<div class="locale" lang="tr" data-page="tr">
+  <a class="skip" href="#tr-main">İçeriğe geç</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="?lang=tr">RafTek</a>
+      <nav class="languages" aria-label="Dil seçimi">
+        <a href="?lang=en" lang="en" hreflang="en">English</a>
+        <a href="?lang=nl" lang="nl" hreflang="nl">Nederlands</a>
+        <a href="?lang=tr" lang="tr" hreflang="tr" aria-current="page">Türkçe</a>
+      </nav>
+      <nav class="site-nav" aria-label="Ana menü">
+        <a href="#tr-how">Nasıl çalışır?</a>
+        <a href="#tr-benefits">Mağazanıza faydaları</a>
+        <a href="#tr-pilot">Pilot uygulama</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="tr-main" tabindex="-1">
+    <section class="hero" aria-labelledby="tr-hero-heading">
+      <div class="wrap split">
+        <div>
+          <h1 id="tr-hero-heading">Kâğıt etiketleri değiştirmeden raf fiyatlarını güncelleyin</h1>
+          <p>Elektronik raf etiketleri, ürünlerin yanında fiyat gösteren küçük ekranlardır. RafTek, yeni fiyatları kablosuz olarak ilgili etiketlere gönderir. Canlı demoda gerçek bir raf etiketindeki fiyatın nasıl değiştiğini görebilirsiniz.</p>
+          <div class="actions">
+            <a class="button" href="#tr-contact">Canlı demo talep edin</a>
+            <a class="button secondary" href="#tr-how">Nasıl çalışır?</a>
+          </div>
+        </div>
+        <img src="./assets/raftek-esl-brand.png" alt="Dijital fiyat gösteren RafTek elektronik raf etiketi"
+             width="989" height="519" fetchpriority="high" decoding="async">
+      </div>
+    </section>
+
+    <section id="tr-how" class="section" aria-labelledby="tr-how-heading">
+      <div class="wrap split">
+        <div>
+          <h2 id="tr-how-heading">Yeni fiyat rafa nasıl ulaşır?</h2>
+          <p>Bir atıştırmalığı kampanyaya aldığınızı düşünün. Kampanya fiyatı etikete şöyle yansır.</p>
+          <ol class="steps">
+            <li><strong>Fiyatı değiştirin</strong><p>Bağlantı kurulmuşsa fiyatı mağaza yazılımınızda değiştirin veya anlaştığımız yönteme göre fiyat dosyasını paylaşın.</p></li>
+            <li><strong>Yeni fiyatı gönderin</strong><p>RafTek, fiyatı kablosuz olarak ürünün raf etiketine gönderir.</p></li>
+            <li><strong>Yeni fiyatı rafta görün</strong><p>Yeni fiyat etikette görünür. Pilot uygulamada bu fiyatı kasa fiyatıyla karşılaştırabiliriz.</p></li>
+          </ol>
+        </div>
+        <figure class="product-example">
+          <img src="./assets/esl-turkey-promo.png" alt="Kampanya fiyatı gösteren dijital raf etiketi" loading="lazy" decoding="async">
+          <figcaption>Kampanya fiyatı gösteren bir raf etiketi örneği.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="tr-benefits" class="section surface" aria-labelledby="tr-benefits-heading">
+      <div class="wrap">
+        <h2 id="tr-benefits-heading">Mağazanıza faydaları</h2>
+        <div class="grid">
+          <div class="card"><h3>Etiket değiştirmeye daha az zaman ayırın</h3><p>Fiyat değiştiğinde mağaza ekibiniz daha az kâğıt etiket basar ve değiştirir.</p></div>
+          <div class="card"><h3>Kampanyaları daha kolay güncelleyin</h3><p>Kampanyaya giren ürünlerin yeni fiyatlarını tek bir yerden etiketlere gönderin.</p></div>
+          <div class="card"><h3>Raf ile kasa arasındaki fiyat farkı riskini azaltın</h3><p>Aynı fiyat kaynağını kullanmak, raf ve kasa fiyatlarının uyumlu kalmasına yardımcı olur.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tr-pilot" class="section" aria-labelledby="tr-pilot-heading">
+      <div class="wrap reading">
+        <h2 id="tr-pilot-heading">Mağazanızın bir bölümünde deneyin</h2>
+        <p>Demoda canlı bir fiyat değişikliği gösteriyoruz. Mağazanızda denemek isterseniz atıştırmalık reyonu gibi tek bir bölümle başlayabiliriz.</p>
+        <ul class="pilot-list">
+          <li>Hangi ürünleri ve fiyat değişikliklerini deneyeceğimizi birlikte belirleyelim.</li>
+          <li>Fiyat bilgilerinizin etiketlere nasıl ulaşacağını kontrol edelim ve güncellemeleri mağazada deneyelim.</li>
+          <li>Güncellemelerin güvenilirliğini, raf ve kasa fiyatlarının uyumunu ve mağaza ekibinizin kullanım deneyimini birlikte değerlendirelim.</li>
+        </ul>
+        <div class="actions"><a class="button" href="#tr-contact">Canlı demo talep edin</a></div>
+      </div>
+    </section>
+
+    <section id="tr-faq" class="section surface" aria-labelledby="tr-faq-heading">
+      <div class="wrap reading">
+        <h2 id="tr-faq-heading">Sık sorulan sorular</h2>
+        <details><summary>Mevcut kasa veya mağaza yazılımımı kullanmaya devam edebilir miyim?</summary><p>Yazılımınızın hangi ürün ve fiyat bilgilerini paylaşabildiğini kontrol ederiz. Mikro ile bağlantı, kullandığınız sürüme ve sizin ya da bayinizin verebildiği erişime bağlıdır. Bazı durumlarda fiyatları Excel veya başka bir dosyadan almak da mümkündür.</p></details>
+        <details><summary>Pilot uygulamanın maliyeti nedir?</summary><p>Maliyet etiket sayısına, fiyat bilgilerinin nasıl iletileceğine ve mağazada gereken kuruluma göre değişir. Başlamaya karar vermeden önce kapsamı görüşebiliriz.</p></details>
+      </div>
+    </section>
+
+    <section id="tr-contact" class="section" aria-labelledby="tr-contact-heading">
+      <div class="wrap split">
+        <div>
+          <h2 id="tr-contact-heading">Canlı demo talep edin</h2>
+          <p>Size e-postayla ulaşıp uygun bir zaman belirleyeceğiz. Demoda canlı fiyat güncellemesini görebilir ve etiketlerin mağazanızda nasıl kullanılacağını sorabilirsiniz.</p>
+          <div class="confirmation">
+            <h3>Demo talebiniz için teşekkür ederiz</h3>
+            <p>Uygun bir zaman belirlemek için size e-posta göndereceğiz.</p>
+          </div>
+          <p>Bize doğrudan e-posta göndermek ister misiniz? <a href="mailto:contact@raftek.net">contact@raftek.net</a></p>
+        </div>
+        <form class="form card" action="https://formsubmit.co/contact@raftek.net" method="post">
+          <input type="hidden" name="_subject" value="RafTek TR — Canlı demo talebi">
+          <input type="hidden" name="_next" value="https://raftek.net/?lang=tr&amp;sent=1#tr-contact">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="Page language" value="tr">
+          <div hidden><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+
+          <label class="field" for="tr-name">Adınız</label>
+          <input id="tr-name" name="Name" autocomplete="name" maxlength="120" required>
+
+          <label class="field" for="tr-company">Mağaza veya işletme adı</label>
+          <input id="tr-company" name="Company" autocomplete="organization" maxlength="160" required>
+
+          <label class="field" for="tr-email">İş e-posta adresiniz</label>
+          <input id="tr-email" type="email" name="email" autocomplete="email" maxlength="254" required>
+
+          <label class="field" for="tr-message">Demoda ne görmek istersiniz? (isteğe bağlı)</label>
+          <textarea id="tr-message" name="Message" rows="4" maxlength="1500"></textarea>
+
+          <p class="note">Bilgilerinizi talebinize yanıt vermek için kullanıyoruz. <a href="./privacy.html">Gizlilik bildirimi</a></p>
+          <button class="button" type="submit">Demo talebini gönder</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <strong>RafTek</strong>
+      <a href="./privacy.html">Gizlilik bildirimi</a>
+    </div>
+  </footer>
+</div>
 </body>
 </html>
