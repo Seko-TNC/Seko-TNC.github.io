@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0a1729">
   <title>Electronic shelf labels for retailers | RafTek</title>
-  <meta name="description" content="See how electronic shelf labels update prices wirelessly, request a live RafTek demo and explore a trial in one section of your store.">
+  <meta name="description" content="Update shelf prices and product information wirelessly, schedule promotions and see how RafTek can fit your current store setup.">
   <link rel="canonical" href="https://raftek.net/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Electronic shelf labels for retailers | RafTek">
-  <meta property="og:description" content="See how electronic shelf labels update prices wirelessly, request a live RafTek demo and explore a trial in one section of your store.">
+  <meta property="og:description" content="Update shelf prices and product information wirelessly, schedule promotions and see how RafTek can fit your current store setup.">
   <meta property="og:url" content="https://raftek.net/">
   <meta property="og:image" content="https://raftek.net/assets/raftek-esl-brand.png">
   <meta property="og:image:alt" content="RafTek electronic shelf label with a digital price display">
@@ -22,9 +22,9 @@
         "tr": "Perakende için elektronik raf etiketleri | RafTek"
       };
       const descriptions = {
-        "en": "See how electronic shelf labels update prices wirelessly, request a live RafTek demo and explore a trial in one section of your store.",
-        "nl": "Ontdek hoe u schapprijzen draadloos bijwerkt, vraag een live demo aan en bespreek een proef in één afdeling van uw winkel.",
-        "tr": "Raf fiyatlarının kablosuz olarak nasıl güncellendiğini öğrenin, canlı demo talep edin ve mağazanızın bir bölümünde pilot uygulamayı görüşün."
+        "en": "Update shelf prices and product information wirelessly, schedule promotions and see how RafTek can fit your current store setup.",
+        "nl": "Werk schapprijzen en productinformatie draadloos bij, plan acties vooraf en ontdek hoe RafTek aansluit op uw huidige werkwijze.",
+        "tr": "Raf fiyatlarını ve ürün bilgilerini kablosuz güncelleyin, kampanyaları planlayın ve RafTek’in mevcut işleyişinize nasıl uyarlanabileceğini görün."
       };
       const params = new URLSearchParams(window.location.search);
       const requested = params.get("lang");
@@ -436,6 +436,12 @@
     }
   }
 
+  @media (width > 42rem) {
+    .use-case-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
   .locale {
     display: none;
   }
@@ -489,7 +495,7 @@
       <div class="wrap split">
         <div>
           <h1 id="hero-heading">Update shelf prices without replacing paper labels</h1>
-          <p>Electronic shelf labels are small screens that display prices beside your products. RafTek sends new prices wirelessly to the right labels. In a live demo, you can watch a price change on a real shelf label.</p>
+          <p>Electronic shelf labels are small screens that display prices and product information beside your goods. RafTek updates them wirelessly, so your team can change prices and run promotions without reprinting labels. See a price change on a real shelf label in a live demo.</p>
           <div class="actions">
             <a class="button" href="#contact">Request a live demo</a>
             <a class="button secondary" href="#how">How it works</a>
@@ -504,11 +510,11 @@
       <div class="wrap split">
         <div>
           <h2 id="how-heading">How a new price reaches the shelf</h2>
-          <p>Imagine putting a snack on promotion. Here’s what happens to its shelf price.</p>
+          <p>We adapt RafTek to how you manage prices, promotions and product information today.</p>
           <ol class="steps">
-            <li><strong>Change the price</strong><p>Update the price in your store software if it’s connected, or share a price file using the method we agree with you.</p></li>
-            <li><strong>Send the update</strong><p>RafTek sends the price wirelessly to the shelf label linked to that product.</p></li>
-            <li><strong>See it on the shelf</strong><p>The label displays the new price. In a trial, we can compare it with the price at the till.</p></li>
+            <li><strong>Review your current setup</strong><p>We look at your systems and how your team works. In most cases, we can integrate RafTek into the setup you already use.</p></li>
+            <li><strong>Choose how updates work</strong><p>Where your setup supports it, labels can update automatically when a price changes in your existing system. We can also tailor how and when updates are sent to suit the way you work.</p></li>
+            <li><strong>Send updates to the shelf</strong><p>RafTek wirelessly sends new prices, promotions or product details to the labels linked to the selected products.</p></li>
           </ol>
         </div>
         <figure class="product-example">
@@ -523,18 +529,33 @@
         <h2 id="benefits-heading">Store benefits</h2>
         <div class="grid">
           <div class="card"><h3>Spend less time changing labels</h3><p>When prices change, staff have fewer paper tags to print and replace.</p></div>
-          <div class="card"><h3>Update promotions in one place</h3><p>Send changes to the labels for the products included in your promotion.</p></div>
           <div class="card"><h3>Reduce the chance of price mismatches</h3><p>Using the same price source can help keep shelf and till prices in line.</p></div>
+          <div class="card"><h3>Roll out changes faster</h3><p>Send a change to a group of products in one go, from a small group of items to changes across the store.</p></div>
+          <div class="card"><h3>Enter prices once</h3><p>When your pricing system is connected, a change there can reach the shelf without your team typing it in again.</p></div>
+          <div class="card"><h3>Keep control of timing</h3><p>Choose when scheduled prices take effect and which products are included.</p></div>
+          <div class="card"><h3>Use less paper</h3><p>Digital updates reduce how often you need to print and throw away paper labels.</p></div>
         </div>
       </div>
     </section>
 
-    <section id="pilot" class="section" aria-labelledby="pilot-heading">
+    <section id="use-cases" class="section" aria-labelledby="use-cases-heading">
+      <div class="wrap">
+        <h2 id="use-cases-heading">What you can use it for</h2>
+        <div class="grid use-case-grid">
+          <div class="card"><h3>Day-to-day price changes</h3><p>Update a single item or send new prices to a whole group of products at once.</p></div>
+          <div class="card"><h3>Timed promotions</h3><p>Schedule offers in advance and set when they start and end, including when regular prices return.</p></div>
+          <div class="card"><h3>Time-sensitive markdowns</h3><p>Schedule reductions for clearance items or products that need to sell by the end of the day.</p></div>
+          <div class="card"><h3>Product information updates</h3><p>Update details such as product names or pack sizes when your range changes, using a label layout that suits your store.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pilot" class="section surface" aria-labelledby="pilot-heading">
       <div class="wrap reading">
-        <h2 id="pilot-heading">Try it in one part of your store</h2>
-        <p>We’ll show you a live price change. If you’d like to try it in your store, we can start with one section, such as snacks.</p>
+        <h2 id="pilot-heading">Start with a trial suited to your store</h2>
+        <p>We’ll show you a live price change. If you’d like to try it in your business, we’ll agree the right scope with you.</p>
         <ul class="pilot-list">
-          <li>Agree on the products and price changes you want to test.</li>
+          <li>Choose the products, locations and types of update you want to test.</li>
           <li>Check how your price data can reach the labels and test updates in the store.</li>
           <li>Review how reliably updates reach the shelf, whether prices match the till and how easily staff can use the system.</li>
         </ul>
@@ -542,15 +563,15 @@
       </div>
     </section>
 
-    <section id="faq" class="section surface" aria-labelledby="faq-heading">
+    <section id="faq" class="section" aria-labelledby="faq-heading">
       <div class="wrap reading">
         <h2 id="faq-heading">Common questions</h2>
-        <details><summary>Can I keep using my current till or store software?</summary><p>We check what product and price data your system can share. With Mikro, the connection depends on the version and the access you or your software provider can give. A spreadsheet or other file may be an option.</p></details>
+        <details><summary>Will setup interrupt my day-to-day operations?</summary><p>Usually, we can set up and connect RafTek while your day-to-day operations continue. We review access and installation needs with you and agree how any work that could affect the store will be scheduled.</p></details>
         <details><summary>What does a trial cost?</summary><p>It depends on how many labels you need, how prices are sent and what on-site setup is needed. We can discuss the scope before you decide whether to start.</p></details>
       </div>
     </section>
 
-    <section id="contact" class="section" aria-labelledby="contact-heading">
+    <section id="contact" class="section surface" aria-labelledby="contact-heading">
       <div class="wrap split">
         <div>
           <h2 id="contact-heading">Request a live demo</h2>
@@ -618,7 +639,7 @@
       <div class="wrap split">
         <div>
           <h1 id="nl-hero-heading">Pas schapprijzen aan zonder papieren labels te vervangen</h1>
-          <p>Elektronische schaplabels zijn kleine schermpjes die de prijs bij uw producten tonen. RafTek stuurt nieuwe prijzen draadloos naar de juiste labels. Tijdens een live demo ziet u een prijs op een echt schaplabel veranderen.</p>
+          <p>Elektronische schaplabels zijn kleine schermpjes die prijzen en productinformatie bij uw artikelen tonen. RafTek werkt ze draadloos bij, zodat uw team prijzen en acties kan aanpassen zonder nieuwe labels te printen. Tijdens een live demo ziet u een prijs op een echt schaplabel veranderen.</p>
           <div class="actions">
             <a class="button" href="#nl-contact">Vraag een live demo aan</a>
             <a class="button secondary" href="#nl-how">Zo werkt het</a>
@@ -633,11 +654,11 @@
       <div class="wrap split">
         <div>
           <h2 id="nl-how-heading">Van prijswijziging tot schap</h2>
-          <p>Stel dat u een snack in de aanbieding doet. Zo komt de actieprijs op het schaplabel.</p>
+          <p>We stemmen RafTek af op de manier waarop u nu prijzen, acties en productinformatie beheert.</p>
           <ol class="steps">
-            <li><strong>Pas de prijs aan</strong><p>Wijzig de prijs in uw winkelsoftware als die is gekoppeld, of lever een prijsbestand aan volgens de afgesproken werkwijze.</p></li>
-            <li><strong>Verstuur de nieuwe prijs</strong><p>RafTek stuurt de prijs draadloos naar het schaplabel dat bij het product hoort.</p></li>
-            <li><strong>Bekijk de prijs op het schap</strong><p>De nieuwe prijs verschijnt op het schaplabel. Tijdens een proef kunnen we die met de kassaprijs vergelijken.</p></li>
+            <li><strong>Bekijk uw huidige werkwijze</strong><p>We bekijken eerst uw systemen en werkwijze. In de meeste gevallen kunnen we RafTek aansluiten op wat u al gebruikt.</p></li>
+            <li><strong>Kies hoe updates verlopen</strong><p>Als uw huidige systeem dat ondersteunt, worden de schaplabels automatisch bijgewerkt zodra daar een prijs verandert. We kunnen ook afstemmen hoe en wanneer u updates verstuurt, zodat dit bij uw werkwijze past.</p></li>
+            <li><strong>Stuur wijzigingen naar het schap</strong><p>RafTek verstuurt nieuwe prijzen, acties of productinformatie draadloos naar de labels van de geselecteerde artikelen.</p></li>
           </ol>
         </div>
         <figure class="product-example">
@@ -652,18 +673,33 @@
         <h2 id="nl-benefits-heading">Voordelen voor uw winkel</h2>
         <div class="grid">
           <div class="card"><h3>Minder tijd kwijt aan labels</h3><p>Bij prijswijzigingen hoeft uw team minder papieren labels te printen en te vervangen.</p></div>
-          <div class="card"><h3>Acties makkelijker aanpassen</h3><p>Stuur nieuwe prijzen vanuit één plek naar de labels van de producten die meedoen aan de actie.</p></div>
           <div class="card"><h3>Minder kans op prijsverschillen</h3><p>Eén prijsbron kan helpen om schap- en kassaprijzen gelijk te houden.</p></div>
+          <div class="card"><h3>Voer wijzigingen sneller door</h3><p>Pas prijzen voor een hele groep artikelen tegelijk aan, van een kleine selectie tot wijzigingen in de hele winkel.</p></div>
+          <div class="card"><h3>Voer prijzen één keer in</h3><p>Met een koppeling kunnen prijswijzigingen vanuit uw huidige systeem automatisch op het schap verschijnen zonder dat uw team ze opnieuw invoert.</p></div>
+          <div class="card"><h3>Houd grip op de timing</h3><p>Bepaal wanneer geplande prijzen ingaan en voor welke artikelen ze gelden.</p></div>
+          <div class="card"><h3>Gebruik minder papier</h3><p>Met digitale updates hoeft u minder vaak papieren labels te printen en weg te gooien.</p></div>
         </div>
       </div>
     </section>
 
-    <section id="nl-pilot" class="section" aria-labelledby="nl-pilot-heading">
+    <section id="nl-use-cases" class="section" aria-labelledby="nl-use-cases-heading">
+      <div class="wrap">
+        <h2 id="nl-use-cases-heading">Waar u het voor kunt gebruiken</h2>
+        <div class="grid use-case-grid">
+          <div class="card"><h3>Dagelijkse prijswijzigingen</h3><p>Pas de prijs van één artikel aan of stuur nieuwe prijzen tegelijk naar een hele groep artikelen.</p></div>
+          <div class="card"><h3>Acties vooraf plannen</h3><p>Stel vooraf in wanneer actieprijzen ingaan en aflopen en wanneer de normale prijzen terugkomen.</p></div>
+          <div class="card"><h3>Tijdgebonden prijsverlagingen</h3><p>Plan prijsverlagingen voor uitverkoopartikelen of producten die u uiterlijk aan het einde van de dag wilt verkopen.</p></div>
+          <div class="card"><h3>Productinformatie bijwerken</h3><p>Pas gegevens zoals productnamen of verpakkingsgroottes aan wanneer uw assortiment wijzigt, met een labelindeling die bij uw winkel past.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nl-pilot" class="section surface" aria-labelledby="nl-pilot-heading">
       <div class="wrap reading">
-        <h2 id="nl-pilot-heading">Probeer het in één afdeling</h2>
-        <p>We laten u een prijswijziging live zien. Wilt u het in uw winkel proberen, dan kunnen we beginnen met één afdeling, bijvoorbeeld het schap met snacks.</p>
+        <h2 id="nl-pilot-heading">Begin met een proef die bij uw winkel past</h2>
+        <p>We laten u een prijswijziging live zien. Wilt u RafTek zelf proberen, dan bepalen we samen hoe groot de proef wordt.</p>
         <ul class="pilot-list">
-          <li>Spreek af welke producten en prijswijzigingen u wilt testen.</li>
+          <li>Kies met ons de producten, locaties en soorten updates die u wilt testen.</li>
           <li>Bekijk hoe uw prijsgegevens de labels kunnen bereiken en test de updates in de winkel.</li>
           <li>Beoordeel samen of de updates betrouwbaar aankomen, of de prijzen overeenkomen met de kassaprijzen en hoe uw team ermee werkt.</li>
         </ul>
@@ -671,15 +707,15 @@
       </div>
     </section>
 
-    <section id="nl-faq" class="section surface" aria-labelledby="nl-faq-heading">
+    <section id="nl-faq" class="section" aria-labelledby="nl-faq-heading">
       <div class="wrap reading">
         <h2 id="nl-faq-heading">Veelgestelde vragen</h2>
-        <details><summary>Kan ik mijn huidige kassa- of winkelsoftware blijven gebruiken?</summary><p>We controleren welke product- en prijsgegevens uw systeem kan delen. Bij Mikro hangt de koppeling af van de versie en de toegang die u of uw softwareleverancier kan geven. Soms is een spreadsheet of ander bestand een optie.</p></details>
+        <details><summary>Kan mijn winkel tijdens de installatie gewoon doordraaien?</summary><p>Doorgaans kunnen we RafTek installeren en koppelen terwijl uw dagelijkse werk doorgaat. We bekijken samen welke toegang en werkzaamheden nodig zijn en plannen werk dat invloed kan hebben op uw winkel in overleg met u.</p></details>
         <details><summary>Wat kost een proef?</summary><p>Dat hangt af van het aantal labels, hoe de prijsgegevens worden aangeleverd en wat er op locatie nodig is. We bespreken de omvang voordat u beslist of u wilt beginnen.</p></details>
       </div>
     </section>
 
-    <section id="nl-contact" class="section" aria-labelledby="nl-contact-heading">
+    <section id="nl-contact" class="section surface" aria-labelledby="nl-contact-heading">
       <div class="wrap split">
         <div>
           <h2 id="nl-contact-heading">Vraag een live demo aan</h2>
@@ -747,7 +783,7 @@
       <div class="wrap split">
         <div>
           <h1 id="tr-hero-heading">Kâğıt etiketleri değiştirmeden raf fiyatlarını güncelleyin</h1>
-          <p>Elektronik raf etiketleri, ürünlerin yanında fiyat gösteren küçük ekranlardır. RafTek, yeni fiyatları kablosuz olarak ilgili etiketlere gönderir. Canlı demoda gerçek bir raf etiketindeki fiyatın nasıl değiştiğini görebilirsiniz.</p>
+          <p>Elektronik raf etiketleri, ürünlerin yanında fiyat ve ürün bilgisi gösteren küçük ekranlardır. RafTek, etiketleri kablosuz günceller. Böylece ekibiniz her değişiklikte yeni etiket basmadan fiyatları ve kampanyaları yönetebilir. Canlı demoda gerçek bir raf etiketindeki fiyatın nasıl değiştiğini görebilirsiniz.</p>
           <div class="actions">
             <a class="button" href="#tr-contact">Canlı demo talep edin</a>
             <a class="button secondary" href="#tr-how">Nasıl çalışır?</a>
@@ -762,11 +798,11 @@
       <div class="wrap split">
         <div>
           <h2 id="tr-how-heading">Yeni fiyat rafa nasıl ulaşır?</h2>
-          <p>Bir atıştırmalığı kampanyaya aldığınızı düşünün. Kampanya fiyatı etikete şöyle yansır.</p>
+          <p>RafTek’i fiyatları, kampanyaları ve ürün bilgilerini bugün nasıl yönettiğinize göre yapılandırıyoruz.</p>
           <ol class="steps">
-            <li><strong>Fiyatı değiştirin</strong><p>Bağlantı kurulmuşsa fiyatı mağaza yazılımınızda değiştirin veya anlaştığımız yönteme göre fiyat dosyasını paylaşın.</p></li>
-            <li><strong>Yeni fiyatı gönderin</strong><p>RafTek, fiyatı kablosuz olarak ürünün raf etiketine gönderir.</p></li>
-            <li><strong>Yeni fiyatı rafta görün</strong><p>Yeni fiyat etikette görünür. Pilot uygulamada bu fiyatı kasa fiyatıyla karşılaştırabiliriz.</p></li>
+            <li><strong>Mevcut işleyişi inceleyelim</strong><p>Önce kullandığınız sistemleri ve ekibinizin çalışma şeklini inceliyoruz. Çoğu durumda RafTek’i mevcut altyapınıza entegre edebiliyoruz.</p></li>
+            <li><strong>Güncelleme yöntemini seçin</strong><p>Mevcut sisteminiz destekliyorsa, sistemdeki fiyat değiştiğinde raf etiketleri otomatik olarak güncellenebilir. Güncellemelerin nasıl ve ne zaman gönderileceğini işleyişinize göre de yapılandırabiliriz.</p></li>
+            <li><strong>Güncellemeleri rafa gönderin</strong><p>RafTek, yeni fiyatları, kampanyaları ve ürün bilgilerini seçilen ürünlerin etiketlerine kablosuz olarak gönderir.</p></li>
           </ol>
         </div>
         <figure class="product-example">
@@ -781,18 +817,33 @@
         <h2 id="tr-benefits-heading">Mağazanıza faydaları</h2>
         <div class="grid">
           <div class="card"><h3>Etiket değiştirmeye daha az zaman ayırın</h3><p>Fiyat değiştiğinde mağaza ekibiniz daha az kâğıt etiket basar ve değiştirir.</p></div>
-          <div class="card"><h3>Kampanyaları daha kolay güncelleyin</h3><p>Kampanyaya giren ürünlerin yeni fiyatlarını tek bir yerden etiketlere gönderin.</p></div>
-          <div class="card"><h3>Raf ile kasa arasındaki fiyat farkı riskini azaltın</h3><p>Aynı fiyat kaynağını kullanmak, raf ve kasa fiyatlarının uyumlu kalmasına yardımcı olur.</p></div>
+          <div class="card"><h3>Raf ve kasa arasındaki fiyat farkı riskini azaltın</h3><p>Aynı fiyat kaynağını kullanmak, raf ve kasa fiyatlarının uyumlu kalmasına yardımcı olur.</p></div>
+          <div class="card"><h3>Değişiklikleri daha hızlı uygulayın</h3><p>Birkaç üründen mağaza geneline kadar, bir ürün grubundaki fiyatları tek seferde güncelleyin.</p></div>
+          <div class="card"><h3>Fiyatı bir kez girin</h3><p>Sistemler birbirine bağlandığında, ekibinizin fiyatı yeniden girmesine gerek kalmadan değişiklik rafa yansıyabilir.</p></div>
+          <div class="card"><h3>Zamanlamayı siz belirleyin</h3><p>Planladığınız fiyatların ne zaman ve hangi ürünlerde geçerli olacağını seçin.</p></div>
+          <div class="card"><h3>Daha az kâğıt kullanın</h3><p>Dijital güncellemeler sayesinde daha az kâğıt etiket basar ve atarsınız.</p></div>
         </div>
       </div>
     </section>
 
-    <section id="tr-pilot" class="section" aria-labelledby="tr-pilot-heading">
+    <section id="tr-use-cases" class="section" aria-labelledby="tr-use-cases-heading">
+      <div class="wrap">
+        <h2 id="tr-use-cases-heading">Nerelerde kullanabilirsiniz?</h2>
+        <div class="grid use-case-grid">
+          <div class="card"><h3>Günlük fiyat değişiklikleri</h3><p>Tek bir ürünün fiyatını değiştirin veya bir ürün grubuna yeni fiyatları topluca gönderin.</p></div>
+          <div class="card"><h3>Zamanlanmış kampanyalar</h3><p>Kampanyanın ne zaman başlayacağını, biteceğini ve normal fiyata ne zaman dönüleceğini önceden belirleyin.</p></div>
+          <div class="card"><h3>Belirli saatlerde indirim</h3><p>Stok fazlası olan veya gün sonuna kadar satmak istediğiniz ürünlerde fiyat indirimlerini önceden planlayın.</p></div>
+          <div class="card"><h3>Ürün bilgisi güncellemeleri</h3><p>Ürün yelpazeniz değiştiğinde ürün adı veya ambalaj miktarı gibi bilgileri mağazanıza uygun bir etiket tasarımıyla güncelleyin.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tr-pilot" class="section surface" aria-labelledby="tr-pilot-heading">
       <div class="wrap reading">
-        <h2 id="tr-pilot-heading">Mağazanızın bir bölümünde deneyin</h2>
-        <p>Demoda canlı bir fiyat değişikliği gösteriyoruz. Mağazanızda denemek isterseniz atıştırmalık reyonu gibi tek bir bölümle başlayabiliriz.</p>
+        <h2 id="tr-pilot-heading">Mağazanıza uygun bir pilot uygulamayla başlayın</h2>
+        <p>Demoda canlı bir fiyat değişikliği gösteriyoruz. RafTek’i mağazanızda denemek isterseniz, pilot uygulamanın kapsamını birlikte belirleriz.</p>
         <ul class="pilot-list">
-          <li>Hangi ürünleri ve fiyat değişikliklerini deneyeceğimizi birlikte belirleyelim.</li>
+          <li>Denenecek ürünleri, uygulama alanlarını ve güncelleme türlerini birlikte seçelim.</li>
           <li>Fiyat bilgilerinizin etiketlere nasıl ulaşacağını kontrol edelim ve güncellemeleri mağazada deneyelim.</li>
           <li>Güncellemelerin güvenilirliğini, raf ve kasa fiyatlarının uyumunu ve mağaza ekibinizin kullanım deneyimini birlikte değerlendirelim.</li>
         </ul>
@@ -800,15 +851,15 @@
       </div>
     </section>
 
-    <section id="tr-faq" class="section surface" aria-labelledby="tr-faq-heading">
+    <section id="tr-faq" class="section" aria-labelledby="tr-faq-heading">
       <div class="wrap reading">
         <h2 id="tr-faq-heading">Sık sorulan sorular</h2>
-        <details><summary>Mevcut kasa veya mağaza yazılımımı kullanmaya devam edebilir miyim?</summary><p>Yazılımınızın hangi ürün ve fiyat bilgilerini paylaşabildiğini kontrol ederiz. Mikro ile bağlantı, kullandığınız sürüme ve sizin ya da bayinizin verebildiği erişime bağlıdır. Bazı durumlarda fiyatları Excel veya başka bir dosyadan almak da mümkündür.</p></details>
+        <details><summary>Kurulum mağazanın günlük işleyişini kesintiye uğratır mı?</summary><p>RafTek’in kurulumu ve entegrasyonu genellikle günlük işleriniz devam ederken yapılabilir. Hangi erişim ve kurulum adımlarının gerektiğini birlikte değerlendirir, mağazayı etkileyebilecek işleri sizinle planlarız.</p></details>
         <details><summary>Pilot uygulamanın maliyeti nedir?</summary><p>Maliyet etiket sayısına, fiyat bilgilerinin nasıl iletileceğine ve mağazada gereken kuruluma göre değişir. Başlamaya karar vermeden önce kapsamı görüşebiliriz.</p></details>
       </div>
     </section>
 
-    <section id="tr-contact" class="section" aria-labelledby="tr-contact-heading">
+    <section id="tr-contact" class="section surface" aria-labelledby="tr-contact-heading">
       <div class="wrap split">
         <div>
           <h2 id="tr-contact-heading">Canlı demo talep edin</h2>
